@@ -8,23 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7452D2171C198D38006DB5CC /* KSYPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7452D2161C198D38006DB5CC /* KSYPlayerVC.m */; };
-		7456205A1C27DDDA000F5748 /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745620591C27DDDA000F5748 /* KSYMediaPlayer.framework */; };
 		74B9ED5D1C158675003149E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9ED5C1C158675003149E9 /* main.m */; };
 		74B9ED601C158675003149E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9ED5F1C158675003149E9 /* AppDelegate.m */; };
 		74B9ED631C158675003149E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9ED621C158675003149E9 /* ViewController.m */; };
 		74B9ED661C158675003149E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B9ED641C158675003149E9 /* Main.storyboard */; };
 		74B9ED681C158675003149E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B9ED671C158675003149E9 /* Assets.xcassets */; };
 		74B9ED6B1C158675003149E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74B9ED691C158675003149E9 /* LaunchScreen.storyboard */; };
-		74B9EE291C159629003149E9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE281C159629003149E9 /* libz.tbd */; };
-		74B9EE2B1C159630003149E9 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE2A1C159630003149E9 /* libbz2.tbd */; };
-		74B9EE2F1C159643003149E9 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE2E1C159643003149E9 /* libstdc++.6.tbd */; };
-		74B9EE311C159649003149E9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE301C159649003149E9 /* VideoToolbox.framework */; };
+		CB066056FBAF9C9C7E3D2EB0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5549D760D1F8D261FAEC9684 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		194EFAA715D6C907287065EA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5549D760D1F8D261FAEC9684 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7452D2151C198D38006DB5CC /* KSYPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYPlayerVC.h; sourceTree = "<group>"; };
 		7452D2161C198D38006DB5CC /* KSYPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYPlayerVC.m; sourceTree = "<group>"; };
-		745620591C27DDDA000F5748 /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/KSYMediaPlayer.framework; sourceTree = "<group>"; };
 		74B9ED581C158675003149E9 /* KSYPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSYPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74B9ED5C1C158675003149E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74B9ED5E1C158675003149E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +37,7 @@
 		74B9EE2C1C159638003149E9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		74B9EE2E1C159643003149E9 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		74B9EE301C159649003149E9 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		80D73D22666B9177BC4C9EA6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,23 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7456205A1C27DDDA000F5748 /* KSYMediaPlayer.framework in Frameworks */,
-				74B9EE311C159649003149E9 /* VideoToolbox.framework in Frameworks */,
-				74B9EE2F1C159643003149E9 /* libstdc++.6.tbd in Frameworks */,
-				74B9EE2B1C159630003149E9 /* libbz2.tbd in Frameworks */,
-				74B9EE291C159629003149E9 /* libz.tbd in Frameworks */,
+				CB066056FBAF9C9C7E3D2EB0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F11E495AC68844B7D40EC4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80D73D22666B9177BC4C9EA6 /* Pods.debug.xcconfig */,
+				194EFAA715D6C907287065EA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		74B9ED4F1C158675003149E9 = {
 			isa = PBXGroup;
 			children = (
-				745620591C27DDDA000F5748 /* KSYMediaPlayer.framework */,
 				74B9ED5A1C158675003149E9 /* KSYPlayerDemo */,
 				74B9ED591C158675003149E9 /* Products */,
+				0F11E495AC68844B7D40EC4B /* Pods */,
+				937E7036C4CBB8490269A1BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +110,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		937E7036C4CBB8490269A1BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5549D760D1F8D261FAEC9684 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74B9ED6F1C158675003149E9 /* Build configuration list for PBXNativeTarget "KSYPlayerDemo" */;
 			buildPhases = (
+				18B4E686D0D764BB17F1B113 /* Check Pods Manifest.lock */,
 				74B9ED541C158675003149E9 /* Sources */,
 				74B9ED551C158675003149E9 /* Frameworks */,
 				74B9ED561C158675003149E9 /* Resources */,
+				ADACD6973499D17C29940B68 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,7 +151,7 @@
 				TargetAttributes = {
 					74B9ED571C158675003149E9 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = PL4ALT6BMK;
+						DevelopmentTeam = ZGJ54Q7R45;
 					};
 				};
 			};
@@ -171,6 +185,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18B4E686D0D764BB17F1B113 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADACD6973499D17C29940B68 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74B9ED541C158675003149E9 /* Sources */ = {
@@ -288,15 +335,19 @@
 		};
 		74B9ED701C158675003149E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D73D22666B9177BC4C9EA6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = ../framework;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = KSYPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.media.ios.KSYPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -304,15 +355,19 @@
 		};
 		74B9ED711C158675003149E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 194EFAA715D6C907287065EA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = ../framework;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = KSYPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.media.ios.KSYPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
