@@ -17,8 +17,8 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.frameworks   = 'VideoToolbox'
   spec.ios.library = 'z', 'iconv', 'stdc++.6'
-  spec.source = { :git => 'https://github.com/qyvideo/libqylive.git', :tag => 'v0.0.1'}
-  spec.preserve_paths      = 'framework/KSYMediaPlayer_iOS.framework'
-  spec.public_header_files = 'framework/KSYMediaPlayer_iOS.framework/Headers'
-  spec.vendored_frameworks = 'KSYMediaPlayer_iOS.framework'
+  spec.source = { :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git', :tag => 'v0.0.1'}
+  spec.preserve_paths      = 'framework/KSYMediaPlayer.framework'
+  spec.public_header_files = 'framework/KSYMediaPlayer.framework/Headers'
+  spec.vendored_frameworks = 'KSYMediaPlayer.framework'
 end
