@@ -72,6 +72,7 @@ KSYMediaPlayer的下载方法：
 
 3. 初始化player
 初始化需要几个步骤：
+
 * 准备需要视频播放的UIView；
 * 新建player；
 * 设置url；
@@ -95,6 +96,7 @@ KSYMediaPlayer的下载方法：
 </pre>
 4. 设置监听
 当前提供了四个Notification监听，分别可以获取如下信息：
+
 * MPMediaPlaybackIsPreparedToPlayDidChangeNotification，完成Prepared;
 * MPMoviePlayerPlaybackStateDidChangeNotification，播放器状态改变；
 * MPMoviePlayerPlaybackDidFinishNotification，播放完成；
@@ -118,18 +120,20 @@ KSYMediaPlayer的下载方法：
                                               object:nil];
 
 </pre>
-
 5. 销毁播放器
 播放器在stop中完成内存释放，new一次KSYMoviePlayerController，需要stop一次。如果两者未配对调用，将引发内存泄露。
 <pre>
         [_player stop];
 </pre>
+
 ## 特性说明
 当前下载版本为轻量级播放sdk，该版本有如下特性：
+
 1. 支持h.264/h.265/aac/mp3编码格式；
 2. 支持rtmp/hls/http-flv直播；
 3. 支持hls和http点播，封装格式为mp4/flv/ts；
 
 如有其他编码和封装格式，请直接联系金山云客服获取其他版本。
+
 ## 接口说明
 请见doc目录下的详细接口说明
