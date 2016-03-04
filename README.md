@@ -136,4 +136,7 @@ KSYMediaPlayer的下载方法：
 如有其他编码和封装格式，请直接联系金山云客服获取其他版本。
 
 ## 接口说明
-请见doc目录下的详细接口说明
+
+[主要接口说明](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E)
+
+更详细的文档请见doc目录下的详细接口说明
