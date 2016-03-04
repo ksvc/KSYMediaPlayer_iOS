@@ -78,6 +78,7 @@
     
     lableVPP = [[UILabel alloc] init];
     lableVPP.text = @"视频后处理";
+    lableVPP.textColor = [UIColor lightGrayColor];
     [self.view addSubview:lableVPP];
 
     switchVPP = [[UISwitch alloc] init];
@@ -282,7 +283,8 @@
     videoView.autoresizesSubviews = TRUE;
     _player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     _player.shouldAutoplay = TRUE;
-    _player.bufferTimeMax = 5;
+//  default bufferTimeMax is 2 seconds
+//    _player.bufferTimeMax = 5;
     _player.shouldEnableVideoPostProcessing = switchVPP.on;
     _player.scalingMode = MPMovieScalingModeAspectFit;
     [_player prepareToPlay];
