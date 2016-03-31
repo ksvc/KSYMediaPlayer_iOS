@@ -13,6 +13,7 @@
 					<Subnodes>
 						<NodeRef refid="1"/>
 						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
 						
 					</Subnodes>
 				</Node>
@@ -23,7 +24,7 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
 						
 					</Subnodes>
 				</Node>
@@ -107,9 +108,36 @@
             </Subnodes>
             
         </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>KSYQosInfo</Name>
+            <Path>Classes/KSYQosInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KSYQosInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KSYQosInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KSYQosInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
 		
 		
-        <Node id="3" type="file" documentType="reference">
+        <Node id="4" type="file" documentType="reference">
             <Name>KSYMediaPlayback</Name>
             <Path>Protocols/KSYMediaPlayback.html</Path>
             
