@@ -38,18 +38,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
-    //_url = [NSURL URLWithString:@"http://ksy.vcloud.sdk.ks3-cn-beijing.ksyun.com/TestVideo/gif_test_0319_1730.flv"];
+    _url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
     _reloadUrl = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
-//     _url = [NSURL URLWithString:@"http://120.132.75.127/vod/mp4/mtv_x264_1920x1080_30_1000K.mp4"];
-    //_url = [NSURL URLWithString:@"http://121.42.58.232:8980/hls_test/1.m3u8"];
-
-    //_url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
-//    _url = [NSURL URLWithString:@"rtmp://test.rtmplive.ks-cdn.com/live/fpzeng"];
-    //_url = [NSURL URLWithString:@"http://121.40.205.48:8091/demo/h265.flv"];
-        _url = [NSURL URLWithString:@"http://120.132.75.127/vod/flv/bbb_720p_qy265.flv"];
-       // _url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
-    //_url = [NSURL URLWithString:@"http://ksy.vcloud.sdk.ks3-cn-beijing.ksyun.com/TestVideo/gif_test_0319_1730.flv"];
-    //_url = [NSURL URLWithString:@"http://gifshow.rtmplive.ks-cdn.com/live/AWLW7_ePxNM.flv"];
     
     [self setupObservers];
     [self initKSYAuth];

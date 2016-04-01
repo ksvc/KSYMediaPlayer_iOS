@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7452D2171C198D38006DB5CC /* KSYPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7452D2161C198D38006DB5CC /* KSYPlayerVC.m */; };
-		74B581041C16D2D00057014F /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE171C158DBB003149E9 /* KSYMediaPlayer.framework */; };
 		74B9ED5D1C158675003149E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9ED5C1C158675003149E9 /* main.m */; };
 		74B9ED601C158675003149E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9ED5F1C158675003149E9 /* AppDelegate.m */; };
 		74B9ED631C158675003149E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B9ED621C158675003149E9 /* ViewController.m */; };
@@ -21,52 +20,8 @@
 		74B9EE311C159649003149E9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE301C159649003149E9 /* VideoToolbox.framework */; };
 		7C89723D1C461FBC00535BC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C89723C1C461FBC00535BC8 /* SystemConfiguration.framework */; };
 		7C9220BA1C984FC9005EF1D1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9220B91C984FC9005EF1D1 /* libsqlite3.tbd */; };
+		9592C4DD1CAE652B0038D99B /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9592C4DC1CAE652B0038D99B /* KSYMediaPlayer.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		74B581021C16D2CD0057014F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7452FC091C156E2900193E20;
-			remoteInfo = KSYMediaPlayer;
-		};
-		74B9EE0E1C158DBB003149E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E654EA8A1B6B27E600B0F2D0;
-			remoteInfo = IJKMediaFramework;
-		};
-		74B9EE101C158DBB003149E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E654EA941B6B27E600B0F2D0;
-			remoteInfo = IJKMediaFrameworkTests;
-		};
-		74B9EE121C158DBB003149E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7452FBEF1C156E1000193E20;
-			remoteInfo = KSYPlayerCore;
-		};
-		74B9EE141C158DBB003149E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7452FBFC1C156E2000193E20;
-			remoteInfo = KSYMediaPlayerCore;
-		};
-		74B9EE161C158DBB003149E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7452FC0A1C156E2900193E20;
-			remoteInfo = KSYMediaPlayer;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7452D2151C198D38006DB5CC /* KSYPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYPlayerVC.h; sourceTree = "<group>"; };
@@ -81,7 +36,6 @@
 		74B9ED671C158675003149E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B9ED6A1C158675003149E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74B9ED6C1C158675003149E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = ../IJKMediaPlayer/IJKMediaPlayer.xcodeproj; sourceTree = "<group>"; };
 		74B9EE281C159629003149E9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		74B9EE2A1C159630003149E9 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		74B9EE2C1C159638003149E9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
@@ -89,6 +43,7 @@
 		74B9EE301C159649003149E9 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		7C89723C1C461FBC00535BC8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7C9220B91C984FC9005EF1D1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9592C4DC1CAE652B0038D99B /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9592C4DD1CAE652B0038D99B /* KSYMediaPlayer.framework in Frameworks */,
 				7C9220BA1C984FC9005EF1D1 /* libsqlite3.tbd in Frameworks */,
 				7C89723D1C461FBC00535BC8 /* SystemConfiguration.framework in Frameworks */,
-				74B581041C16D2D00057014F /* KSYMediaPlayer.framework in Frameworks */,
 				74B9EE311C159649003149E9 /* VideoToolbox.framework in Frameworks */,
 				74B9EE2F1C159643003149E9 /* libstdc++.6.tbd in Frameworks */,
 				74B9EE2B1C159630003149E9 /* libbz2.tbd in Frameworks */,
@@ -112,9 +67,9 @@
 		74B9ED4F1C158675003149E9 = {
 			isa = PBXGroup;
 			children = (
+				9592C4DC1CAE652B0038D99B /* KSYMediaPlayer.framework */,
 				7C9220B91C984FC9005EF1D1 /* libsqlite3.tbd */,
 				7C89723C1C461FBC00535BC8 /* SystemConfiguration.framework */,
-				74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */,
 				74B9ED5A1C158675003149E9 /* KSYPlayerDemo */,
 				74B9ED591C158675003149E9 /* Products */,
 			);
@@ -159,18 +114,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		74B9EE071C158DBA003149E9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				74B9EE0F1C158DBB003149E9 /* IJKMediaFramework.framework */,
-				74B9EE111C158DBB003149E9 /* IJKMediaFrameworkTests.xctest */,
-				74B9EE131C158DBB003149E9 /* libKSYPlayerCore.a */,
-				74B9EE151C158DBB003149E9 /* libKSYMediaPlayerCore.a */,
-				74B9EE171C158DBB003149E9 /* KSYMediaPlayer.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,7 +128,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				74B581031C16D2CD0057014F /* PBXTargetDependency */,
 			);
 			name = KSYPlayerDemo;
 			productName = KSYPlayerDemo;
@@ -218,56 +160,12 @@
 			mainGroup = 74B9ED4F1C158675003149E9;
 			productRefGroup = 74B9ED591C158675003149E9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 74B9EE071C158DBA003149E9 /* Products */;
-					ProjectRef = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				74B9ED571C158675003149E9 /* KSYPlayerDemo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		74B9EE0F1C158DBB003149E9 /* IJKMediaFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = IJKMediaFramework.framework;
-			remoteRef = 74B9EE0E1C158DBB003149E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74B9EE111C158DBB003149E9 /* IJKMediaFrameworkTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = IJKMediaFrameworkTests.xctest;
-			remoteRef = 74B9EE101C158DBB003149E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74B9EE131C158DBB003149E9 /* libKSYPlayerCore.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libKSYPlayerCore.a;
-			remoteRef = 74B9EE121C158DBB003149E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74B9EE151C158DBB003149E9 /* libKSYMediaPlayerCore.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libKSYMediaPlayerCore.a;
-			remoteRef = 74B9EE141C158DBB003149E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74B9EE171C158DBB003149E9 /* KSYMediaPlayer.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KSYMediaPlayer.framework;
-			remoteRef = 74B9EE161C158DBB003149E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		74B9ED561C158675003149E9 /* Resources */ = {
@@ -295,14 +193,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		74B581031C16D2CD0057014F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KSYMediaPlayer;
-			targetProxy = 74B581021C16D2CD0057014F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		74B9ED641C158675003149E9 /* Main.storyboard */ = {
@@ -418,7 +308,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../build/universal/lib",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-all_load";
@@ -441,7 +330,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../build/universal/lib",
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "-all_load";
