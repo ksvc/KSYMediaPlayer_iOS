@@ -39,6 +39,7 @@
     [super viewDidLoad];
     [self initUI];
     _url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
+    _url = [NSURL URLWithString:@"http://test.rtmplive.ks-cdn.com/live/r7.flv"];
     _reloadUrl = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
     
     [self setupObservers];
@@ -69,7 +70,6 @@
     [btnReload addTarget:self action:@selector(onReloadVideo:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnReload];
 
-    
     //add stop button
     btnStop = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [btnStop setTitle:@"stop" forState: UIControlStateNormal];
@@ -112,7 +112,7 @@
     
     switchHwCodec = [[UISwitch alloc] init];
     [self.view  addSubview:switchHwCodec];
-    switchHwCodec.on = YES;
+    switchHwCodec.on = NO;
     
     [self layoutUI];
 }
@@ -346,10 +346,10 @@
     videoView.autoresizesSubviews = TRUE;
     _player.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     _player.shouldAutoplay = TRUE;
-//    _player.bufferTimeMax = 5;
+    _player.bufferTimeMax = 5;
     _player.shouldEnableVideoPostProcessing = switchVPP.on;
     _player.scalingMode = MPMovieScalingModeAspectFit;
-    //_player.shouldUseHWCodec = switchHwCodec.isOn;
+    NSLog((@"sdk :%@"),[_player getVersion]);
     //[_player setTimeout:10];
     [_player prepareToPlay];
 }
