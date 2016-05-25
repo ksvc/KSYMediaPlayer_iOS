@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <KSYMediaPlayer/KSYMediaPlayer.h>
 @interface KSYPlayerVC : UIViewController
-
-
+- (instancetype)initWithURL:(NSURL *)url;
 @end
 

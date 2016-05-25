@@ -7,16 +7,24 @@
 //
 
 #import "AppDelegate.h"
-
+#import "KSYLiveVC.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
+#define DEV_MODE 1
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    if(!DEV_MODE){
+        self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        KSYLiveVC *liveVc = [[KSYLiveVC alloc]init];
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:liveVc];
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+    }
+
     return YES;
 }
 
