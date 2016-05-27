@@ -51,26 +51,7 @@ KSYMediaPlayer的下载方法：
 
 1. 打开需要集成播放视频功能的视图源码PlayerViewController.m，把如下代码复制并粘贴到你将播放视频的位置，例如到播放按钮的方法中。 先导入头文件#import <KSYMediaPlayer/KSYMediaPlayer.h>
 
-2. 初始化auth认证
-
-需要从金山云获取的认证信息如下：
-* appid
-* ak
-* sk
-
-金山云将sk和当前时间进行了一次md5运行，用以保护开发者sk。
-<pre>
-//MD5函数请见demo
-- (void)initKSYAuth
-{
-    NSString* time = [NSString stringWithFormat:@"%d",(int)[[NSDate date]timeIntervalSince1970]];
-    NSString* sk = [NSString stringWithFormat:@"this_is_skey%@", time];
-    NSString* sksign = [self MD5:sk];
-    [[KSYPlayerAuth sharedInstance]setAuthInfo:@"this_is_appid" accessKey:@"this_is_ak" secretKeySign:sksign timeSeconds:time];
-}
-</pre>
-
-3. 初始化player
+2. 初始化player
 初始化需要几个步骤：
 
 * 准备需要视频播放的UIView；
@@ -94,7 +75,8 @@ KSYMediaPlayer的下载方法：
     _player.scalingMode = MPMovieScalingModeAspectFit;
     [_player prepareToPlay];
 </pre>
-4. 设置监听
+
+3. 设置监听
 当前提供了四个Notification监听，分别可以获取如下信息：
 
 * MPMediaPlaybackIsPreparedToPlayDidChangeNotification，完成Prepared;
@@ -120,7 +102,7 @@ KSYMediaPlayer的下载方法：
                                               object:nil];
 
 </pre>
-5. 销毁播放器
+4. 销毁播放器
 播放器在stop中完成内存释放，new一次KSYMoviePlayerController，需要stop一次。如果两者未配对调用，将引发内存泄露。
 <pre>
         [_player stop];
