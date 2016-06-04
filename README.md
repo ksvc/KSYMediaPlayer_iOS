@@ -24,8 +24,8 @@ KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用�
 | ------------ | ------------- | ------------ |
 | 流协议 	| HLS, RTMP, HTTP, FILE | HLS, RTMP, HTTP, FILE, RTSP |
 | 封装格式 	| FLV, TS, MPEG, MOV, M4V, MP3, GIF | FLV, TS, MPEG, MOV, M4V, MP3, GIF, AVI, ASF, MKV, WAV, WEBM, RM|
-| 视频编码格式 | H264, H265, MPEG4, MJPEG | H263, H264, H265, MPEG2, MPEG4, MJPEG, VC-1, WMV, RV40|
-| 音频编码格式 | AAC, MP3 |AAC, MP3, AC3, AMR, APE, DTS, EAC3, FLAC, PCM, OGG, WMA, COOK|
+| 视频编码格式 | H264, H265, MPEG4, MJPEG, JPEG2000, GIF | H263, H264, H265, MPEG2, MPEG4, MJPEG, VC-1, WMV, RV40, PNG, JPEG, YUV, WEBP, TIFF|
+| 音频编码格式 | AAC, MP3 |AAC, MP3, AMR, APE, DTS, FLAC, PCM, OGG, WMA, COOK|
 
 ## 3. 运行环境
 KSY MediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及以上版本; 支持 armv7/arm64以及虚拟机运行。
@@ -55,7 +55,7 @@ KSY MediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及�
 执行pod install或者pod update后，将SDK加入工程。  
 
 ## 5. 快速集成
-[快速集成](https://github.com/fpzeng/KSYMediaPlayer_iOS/wiki/快速集成)中提供了集成金山云播放SDK的基本方法。
+[快速集成](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/快速集成)中提供了集成金山云播放SDK的基本方法。
 具体可以参考demo工程中的相应文件。
 
 ## 6. 注意事项
@@ -64,7 +64,7 @@ KSY MediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及�
 * 本framework为静态库，虽然库的大小为20M+，但是最后链接后，对app的增量只有2M+。
 
 ## 7. 详细介绍
-关于集成本SDK更详细的介绍请参考：[https://github.com/fpzeng/KSYMediaPlayer_iOS/wiki](https://github.com/fpzeng/KSYMediaPlayer_iOS/wiki)  
+关于集成本SDK更详细的介绍请参考：[https://github.com/ksvc/KSYMediaPlayer_iOS/wiki](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki)  
 主要接口说明请参考：[http://ksvc.github.io/KSYMediaPlayer_iOS/html/index.html](http://ksvc.github.io/KSYMediaPlayer_iOS/html/index.html)
 
 ## 8. 反馈与建议
