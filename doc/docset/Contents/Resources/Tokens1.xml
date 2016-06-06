@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/KSYMoviePlayerController</TokenIdentifier>
-			<Abstract type="html">金山云播放内核提供了跨终端平台的播放器SDK，支持Android/iOS/Flash平台的视频播放需求。金山云播放内核集成有业界一流的高性能H.265/HEVC解码器，提供流畅、低功耗的播放体验。同时SDK提供和系统播放器一致的音视频播放、控制接口，极大地降低了开发门槛。</Abstract>
+			<Abstract type="html">KSYMoviePlayerController</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
             
 			
@@ -516,23 +516,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/isPlaying</TokenIdentifier>
-			<Abstract type="html">当前播放器是否在播放</Abstract>
-			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
-			
-	<RelatedTokens>
-		<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/playbackState</TokenIdentifier>
-		
-	</RelatedTokens>
-	
-			<Declaration>- (BOOL)isPlaying</Declaration>
-			
-			<ReturnValue><Abstract type="html">获取playbackState信息，如果当前状态为MPMoviePlaybackStatePlaying，则返回TRUE。其他情况返回FASLE。</Abstract></ReturnValue>
-			<Anchor>//api/name/isPlaying</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setReadSize:</TokenIdentifier>
 			<Abstract type="html">已经加载的数据大小</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
@@ -725,18 +708,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/saveVideoLocalPath:</TokenIdentifier>
-			<Abstract type="html">视频本地保持路径</Abstract>
-			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
-			
-			<Declaration>- (void)saveVideoLocalPath:(NSString *)localpath</Declaration>
-			
-			
-			<Anchor>//api/name/saveVideoLocalPath:</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setShouldEnableVideoPostProcessing:</TokenIdentifier>
 			<Abstract type="html">是否开启视频后处理</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
@@ -769,18 +740,6 @@
 			
 			
 			<Anchor>//api/name/shouldEnableVideoPostProcessing</Anchor>
-            <NodeRef refid="1"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setTimeout:</TokenIdentifier>
-			<Abstract type="html">timeout指定拉流超时时间,单位是秒。</Abstract>
-			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
-			
-			<Declaration>- (void)setTimeout:(int)timeout</Declaration>
-			
-			
-			<Anchor>//api/name/setTimeout:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
@@ -821,19 +780,315 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reload:</TokenIdentifier>
-			<Abstract type="html">重新启动拉流</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setShouldMute:</TokenIdentifier>
+			<Abstract type="html">是否静音</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
-			<Declaration>- (void)reload:(NSURL *)aUrl</Declaration>
+			<Declaration>@property (nonatomic) BOOL shouldMute</Declaration>
+			
+			
+			<Anchor>//api/name/shouldMute</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/shouldMute</TokenIdentifier>
+			<Abstract type="html">是否静音</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldMute</Declaration>
+			
+			
+			<Anchor>//api/name/shouldMute</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/shouldMute</TokenIdentifier>
+			<Abstract type="html">是否静音</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldMute</Declaration>
+			
+			
+			<Anchor>//api/name/shouldMute</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setShouldLoop:</TokenIdentifier>
+			<Abstract type="html">是否循环播放</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldLoop</Declaration>
+			
+			
+			<Anchor>//api/name/shouldLoop</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/shouldLoop</TokenIdentifier>
+			<Abstract type="html">是否循环播放</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldLoop</Declaration>
+			
+			
+			<Anchor>//api/name/shouldLoop</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/shouldLoop</TokenIdentifier>
+			<Abstract type="html">是否循环播放</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldLoop</Declaration>
+			
+			
+			<Anchor>//api/name/shouldLoop</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setVideoDataBlock:</TokenIdentifier>
+			<Abstract type="html">视频数据回调</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/KSYPlyVideoDataBlock</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) KSYPlyVideoDataBlock videoDataBlock</Declaration>
+			
+			
+			<Anchor>//api/name/videoDataBlock</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/videoDataBlock</TokenIdentifier>
+			<Abstract type="html">视频数据回调</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/KSYPlyVideoDataBlock</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) KSYPlyVideoDataBlock videoDataBlock</Declaration>
+			
+			
+			<Anchor>//api/name/videoDataBlock</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/videoDataBlock</TokenIdentifier>
+			<Abstract type="html">视频数据回调</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/KSYPlyVideoDataBlock</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) KSYPlyVideoDataBlock videoDataBlock</Declaration>
+			
+			
+			<Anchor>//api/name/videoDataBlock</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setAudioDataBlock:</TokenIdentifier>
+			<Abstract type="html">音频数据回调</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/KSYPlyAudioDataBlock</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) KSYPlyAudioDataBlock audioDataBlock</Declaration>
+			
+			
+			<Anchor>//api/name/audioDataBlock</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/audioDataBlock</TokenIdentifier>
+			<Abstract type="html">音频数据回调</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/KSYPlyAudioDataBlock</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) KSYPlyAudioDataBlock audioDataBlock</Declaration>
+			
+			
+			<Anchor>//api/name/audioDataBlock</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/audioDataBlock</TokenIdentifier>
+			<Abstract type="html">音频数据回调</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/c/tdef/KSYPlyAudioDataBlock</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, copy) KSYPlyAudioDataBlock audioDataBlock</Declaration>
+			
+			
+			<Anchor>//api/name/audioDataBlock</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setRotateDegress:</TokenIdentifier>
+			<Abstract type="html">指定逆时针旋转角度，只能是0/90/180/270, 不符合上述值不进行旋转</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int rotateDegress</Declaration>
+			
+			
+			<Anchor>//api/name/rotateDegress</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/rotateDegress</TokenIdentifier>
+			<Abstract type="html">指定逆时针旋转角度，只能是0/90/180/270, 不符合上述值不进行旋转</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int rotateDegress</Declaration>
+			
+			
+			<Anchor>//api/name/rotateDegress</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/rotateDegress</TokenIdentifier>
+			<Abstract type="html">指定逆时针旋转角度，只能是0/90/180/270, 不符合上述值不进行旋转</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) int rotateDegress</Declaration>
+			
+			
+			<Anchor>//api/name/rotateDegress</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setTimeout:</TokenIdentifier>
+			<Abstract type="html">timeout指定拉流超时时间,单位是秒</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (void)setTimeout:(int)timeout</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>url</Name>
-					<Abstract type="html">视频播放地址，该地址可以是本地地址或者服务器地址.如果为nil，则使用前一次播放地址。</Abstract>
+					<Name>timeout</Name>
+					<Abstract type="html">拉流超时时间，默认值是30秒</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/reload:</Anchor>
+			<Anchor>//api/name/setTimeout:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setVolume:rigthVolume:</TokenIdentifier>
+			<Abstract type="html">setVolume指定播放器输出音量</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (void)setVolume:(float)leftVolume rigthVolume:(float)rightVolume</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>leftVolume</Name>
+					<Abstract type="html">left volume scalar  [0~1.0f]</Abstract>
+				</Parameter><Parameter>
+					<Name>rightVolume</Name>
+					<Abstract type="html">right volume scalar [0~1.0f]
+@discussion
+
+* 输入参数超出范围将失效
+* 输出到speaker时需同时设置左右音量为有效值
+    如：leftVolume ＝ rightVolume ＝ 0.5f</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setVolume:rigthVolume:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/getVersion</TokenIdentifier>
+			<Abstract type="html">获取sdk版本</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getVersion</Declaration>
+			
+			
+			<Anchor>//api/name/getVersion</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/getMetadata</TokenIdentifier>
+			<Abstract type="html">获取播放Meta信息</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getMetadata</Declaration>
+			
+			
+			<Anchor>//api/name/getMetadata</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/isPlaying</TokenIdentifier>
+			<Abstract type="html">当前播放器是否在播放</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/playbackState</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)isPlaying</Declaration>
+			
+			<ReturnValue><Abstract type="html">获取playbackState信息，如果当前状态为MPMoviePlaybackStatePlaying，则返回TRUE。其他情况返回FASLE。</Abstract></ReturnValue>
+			<Anchor>//api/name/isPlaying</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reload:is_flush:</TokenIdentifier>
+			<Abstract type="html">重新启动拉流</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (void)reload:(NSURL *)aUrl is_flush:(bool)is_flush</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aUrl</Name>
+					<Abstract type="html">视频播放地址，该地址可以是本地地址或者服务器地址.如果为nil，则使用前一次播放地址</Abstract>
+				</Parameter><Parameter>
+					<Name>is_flush</Name>
+					<Abstract type="html">是否清除上一个url的缓冲区内容，该值为FALSE不清除，为TRUE则清除</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reload:is_flush:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
