@@ -17,10 +17,16 @@
 @property (strong, nonatomic) KSYMoviePlayerController *player;
 @end
 
-
+#define dispatch_main_sync_safe(block)\
+if ([NSThread isMainThread]) {\
+block();\
+} else {\
+dispatch_sync(dispatch_get_main_queue(), block);\
+}
 @implementation KSYPlayerVC{
     UILabel *stat;
     NSTimer* timer;
+    NSTimer* repeateTimer;
     double lastSize;
     NSTimeInterval lastCheckTime;
     NSString* serverIp;
@@ -30,6 +36,7 @@
     UIButton *btnReload;
     UIButton *btnStop;
     UIButton *btnQuit;
+    UIButton *btnRepeat;
     UIButton *btnRotate;
     UIButton *btnContentMode;
     UILabel  *lableHWCodec;
@@ -60,6 +67,7 @@
     [super viewDidLoad];
     [self initUI];
     [self setupObservers];
+    repeateTimer = nil;
 }
 - (void) initUI {
     //add UIView for player
@@ -85,9 +93,12 @@
     //add rotate button
     btnRotate = [self addButtonWithTitle:@"rotate" action:@selector(onRotate:)];
    
-	//add content mode butten
+	//add content mode buttpn
 	btnContentMode = [self addButtonWithTitle:@"mode" action:@selector(onContentMode:)];
     
+    //add repeate play button
+    btnRepeat = [self addButtonWithTitle:@"repeat" action:@selector(onRepeatPlay:)];
+
 	stat = [[UILabel alloc] init];
     stat.backgroundColor = [UIColor clearColor];
     stat.textColor = [UIColor redColor];
@@ -190,6 +201,8 @@
     btnRotate.frame = CGRectMake(xPos, yPos, btnWdt, btnHgt);
     xPos += gap + btnWdt;
     btnContentMode.frame = CGRectMake(xPos, yPos, btnWdt, btnHgt);
+    xPos += gap + btnWdt;
+    btnRepeat.frame = CGRectMake(xPos, yPos, btnWdt, btnHgt);
     
 	stat.frame = CGRectMake(gap, 0, wdt, hgt);
 }
@@ -422,7 +435,7 @@
 	_player.shouldUseHWCodec = switchHwCodec.isOn;
     _player.shouldMute  = switchMute.isOn;
     _player.shouldEnableKSYStatModule = TRUE;
-    _player.shouldLoop = TRUE;
+    _player.shouldLoop = NO;
     //[_player setTimeout:10];
     
     NSLog(@"sdk version:%@", [_player getVersion]);
@@ -439,6 +452,22 @@
 - (IBAction)onPauseVideo:(id)sender {
     if (_player) {
         [_player pause];
+    }
+}
+- (void)repeatPlay:(NSTimer *)t {
+    if(arc4random() % 10 == 1)
+    {
+        dispatch_main_sync_safe(^{
+            [self onStopVideo:nil];
+            [self onPlayVideo:nil];
+        });
+    }
+}
+- (IBAction)onRepeatPlay:(id)sender{
+    if ([repeateTimer isValid]) {
+        [repeateTimer invalidate];
+    }else{
+        repeateTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(repeatPlay:) userInfo:nil repeats:YES];
     }
 }
 - (IBAction)onStopVideo:(id)sender {
