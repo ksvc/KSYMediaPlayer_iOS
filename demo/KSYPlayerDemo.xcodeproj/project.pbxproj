@@ -419,6 +419,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/KSYPlayerDemo",
 				);
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.media.ios.KSYPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,6 +441,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/KSYPlayerDemo",
 				);
+				OTHER_CFLAGS = "-fembed-bitcode";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.media.ios.KSYPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -17,7 +17,7 @@ KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用�
 * 支持画面旋转，音量调节等各种功能；
 * 版本适配支持iOS 7.0以上版本；
 * 业内一流的H.265解码；
-* 4M大小的超轻量级直播sdk；
+* 2M大小的超轻量级直播sdk；
 * 提供了支持直播和点播两个静态库，相比直播，点播支持了更丰富的封装格式和音视频编解码格式，二者支持的具体功能如下：
 
 |  | 直播 | 点播 |
@@ -61,7 +61,7 @@ KSY MediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及�
 ## 6. 注意事项
 * 推流的SDK中已经包涵了本framework，如需要推流功能，请直接下载推流SDK[https://github.com/ksvc/KSYLive_iOS](https://github.com/ksvc/KSYLive_iOS)，并参考其中的使用手册。本文所介绍的仅限于iOS播放SDK。
 * 本framework可能与其他使用了FFmpeg的静态库冲突。
-* 本framework为静态库，虽然库的大小为20M+，但是最后链接后，对app的增量只有4M+。
+* 本framework为静态库，虽然库的大小为20M+，但是最后链接后，对app的增量只有2M+。
 
 ## 7. 详细介绍
 关于集成本SDK更详细的介绍请参考：[https://github.com/ksvc/KSYMediaPlayer_iOS/wiki](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki)  
