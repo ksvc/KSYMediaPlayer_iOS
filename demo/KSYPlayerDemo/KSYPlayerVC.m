@@ -331,6 +331,11 @@ dispatch_sync(dispatch_get_main_queue(), block);\
         far_costtime = (int)((long long int)([self getCurrentTime] * 1000) - prepared_time);
 		NSLog(@"first audio frame render, cost time : %dms!\n", far_costtime);
 	}
+    
+    if (MPMoviePlayerSuggestReloadNotification == notify.name)
+    {
+        NSLog(@"suggest using reload function!\n");
+    }
 }
 - (void) toast:(NSString*)message{
     UIAlertView *toast = [[UIAlertView alloc] initWithTitle:nil
@@ -377,6 +382,10 @@ dispatch_sync(dispatch_get_main_queue(), block);\
                                             selector:@selector(handlePlayerNotify:)
                                                 name:(MPMoviePlayerFirstAudioFrameRenderedNotification)
                                               object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self
+                                            selector:@selector(handlePlayerNotify:)
+                                                name:(MPMoviePlayerSuggestReloadNotification)
+                                              object:nil];
 }
 
 - (void)releaseObservers 
@@ -401,6 +410,9 @@ dispatch_sync(dispatch_get_main_queue(), block);\
                                                  object:nil];
     [[NSNotificationCenter defaultCenter]removeObserver:self
                                                    name:MPMoviePlayerFirstAudioFrameRenderedNotification
+                                                 object:nil];
+    [[NSNotificationCenter defaultCenter]removeObserver:self
+                                                   name:MPMoviePlayerSuggestReloadNotification
                                                  object:nil];
 }
 - (IBAction)onPlayVideo:(id)sender {
@@ -437,7 +449,11 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     _player.shouldEnableKSYStatModule = TRUE;
     _player.shouldLoop = NO;
     //[_player setTimeout:10];
-    
+    NSKeyValueObservingOptions opts = NSKeyValueObservingOptionNew;
+    [_player addObserver:self
+                      forKeyPath:@"currentPlaybackTime"
+                         options:opts
+                         context:nil];
     NSLog(@"sdk version:%@", [_player getVersion]);
     prepared_time = (long long int)([self getCurrentTime] * 1000);
     [_player prepareToPlay];
@@ -455,12 +471,16 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     }
 }
 - (void)repeatPlay:(NSTimer *)t {
-    if(arc4random() % 10 == 1)
+    if(nil == _player||arc4random() % 20 == 0)
     {
         dispatch_main_sync_safe(^{
             [self onStopVideo:nil];
             [self onPlayVideo:nil];
         });
+    }else if(arc4random() % 5 == 0){
+        [self onReloadVideo:nil];
+    }else if(arc4random() % 30 == 0){
+        switchHwCodec.on = !switchHwCodec.isOn;
     }
 }
 - (IBAction)onRepeatPlay:(id)sender{
@@ -478,6 +498,9 @@ dispatch_sync(dispatch_get_main_queue(), block);\
               _player.bufferEmptyDuration);
         
         [_player stop];
+        [_player removeObserver:self
+                             forKeyPath:@"currentPlaybackTime"
+                                context:nil];
         [_player.view removeFromSuperview];
         _player = nil;
         stat.text = [NSString stringWithFormat:@"url: %@\nstopped", _url];
@@ -642,4 +665,16 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     return address;
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context
+{
+    if ([keyPath isEqual:@"currentPlaybackTime"] == NO) {
+        return;
+    }
+    
+    NSTimeInterval position = [[change objectForKey:NSKeyValueChangeNewKey] floatValue];
+    //NSLog(@">>>>>>>>>>>>>>>>> current playback position:%.1fs\n", position);
+}
 @end
