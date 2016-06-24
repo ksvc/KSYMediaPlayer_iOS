@@ -1092,6 +1092,18 @@
             <NodeRef refid="1"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/getCurrentPts</TokenIdentifier>
+			<Abstract type="html">获取当前播放的pts</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (NSTimeInterval)getCurrentPts</Declaration>
+			
+			
+			<Anchor>//api/name/getCurrentPts</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
         
         
 	</File>

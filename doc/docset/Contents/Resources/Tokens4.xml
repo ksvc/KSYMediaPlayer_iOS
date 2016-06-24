@@ -173,6 +173,26 @@
             <NodeRef refid="4"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeVideoDecodeFailed</TokenIdentifier>
+            <Abstract type="html">视频解码失败</Abstract>
+            <Declaration>KSYMPErrorCodeVideoDecodeFailed</Declaration>
+            
+            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            
+            <NodeRef refid="4"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeAudioDecodeFailed</TokenIdentifier>
+            <Abstract type="html">音频解码失败</Abstract>
+            <Declaration>KSYMPErrorCodeAudioDecodeFailed</Declaration>
+            
+            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            
+            <NodeRef refid="4"/>
+        </Token>
+        
         
 	</File>
 </Tokens>
