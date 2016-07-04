@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
 Path: /Users/shixuemei1/Library/Developer/Shared/Documentation/DocSets/com.ksyun.KSYPlayer.docset
-Time: 2016-06-24 06:24:31 +0000
+Time: 2016-07-03 08:30:15 +0000

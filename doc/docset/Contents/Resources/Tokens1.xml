@@ -660,6 +660,78 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setClientIP:</TokenIdentifier>
+			<Abstract type="html">客户端出口IP</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *clientIP</Declaration>
+			
+			
+			<Anchor>//api/name/clientIP</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/clientIP</TokenIdentifier>
+			<Abstract type="html">客户端出口IP</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *clientIP</Declaration>
+			
+			
+			<Anchor>//api/name/clientIP</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/clientIP</TokenIdentifier>
+			<Abstract type="html">客户端出口IP</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *clientIP</Declaration>
+			
+			
+			<Anchor>//api/name/clientIP</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setLocalDNSIP:</TokenIdentifier>
+			<Abstract type="html">客户端LocalDNSIP</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *localDNSIP</Declaration>
+			
+			
+			<Anchor>//api/name/localDNSIP</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/localDNSIP</TokenIdentifier>
+			<Abstract type="html">客户端LocalDNSIP</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *localDNSIP</Declaration>
+			
+			
+			<Anchor>//api/name/localDNSIP</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/localDNSIP</TokenIdentifier>
+			<Abstract type="html">客户端LocalDNSIP</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *localDNSIP</Declaration>
+			
+			
+			<Anchor>//api/name/localDNSIP</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setQosInfo:</TokenIdentifier>
 			<Abstract type="html">视频流qos信息</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
