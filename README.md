@@ -69,4 +69,4 @@ KSY MediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及�
 
 ## 8. 反馈与建议
 - 主页：[金山云](http://www.ksyun.com/)
-- 邮箱：<linsong2@kingsoft.com>
+- 邮箱：<zengfanping@kingsoft.com>
