@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58E2C1871D2BD72B00CA5432 /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E2C1861D2BD72B00CA5432 /* KSYMediaPlayer.framework */; };
-		58E2C1891D2BD82700CA5432 /* KSYMediaPlayerDy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E2C1881D2BD82700CA5432 /* KSYMediaPlayerDy.framework */; };
-		58E2C18B1D2BD8D700CA5432 /* KSYMediaPlayerDy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58E2C1881D2BD82700CA5432 /* KSYMediaPlayerDy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58C462931D37D34D001BC26A /* KSYMediaPlayerDy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C462921D37D34D001BC26A /* KSYMediaPlayerDy.framework */; };
+		58C462951D37D365001BC26A /* KSYMediaPlayerDy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58C462941D37D365001BC26A /* KSYMediaPlayerDy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58C462971D37D376001BC26A /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C462961D37D376001BC26A /* KSYMediaPlayer.framework */; };
 		740BACD61D2227CF00CAD4EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 955FDFC51CCF3EC300B37F54 /* ViewController.m */; };
 		740BACD71D2227CF00CAD4EB /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4A4111CC085BE00CB6804 /* QRViewController.m */; };
 		740BACD81D2227CF00CAD4EB /* KSYSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4A40D1CC085BE00CB6804 /* KSYSQLite.m */; };
@@ -89,22 +89,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		580D6CBC1D2BD467009CB265 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				58E2C18B1D2BD8D700CA5432 /* KSYMediaPlayerDy.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		740BACEC1D2227CF00CAD4EB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				58C462951D37D365001BC26A /* KSYMediaPlayerDy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,8 +113,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		58E2C1861D2BD72B00CA5432 /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
-		58E2C1881D2BD82700CA5432 /* KSYMediaPlayerDy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayerDy.framework; path = ../framework/live/KSYMediaPlayerDy.framework; sourceTree = "<group>"; };
+		58C462921D37D34D001BC26A /* KSYMediaPlayerDy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayerDy.framework; path = ../framework/live/KSYMediaPlayerDy.framework; sourceTree = "<group>"; };
+		58C462941D37D365001BC26A /* KSYMediaPlayerDy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayerDy.framework; path = ../framework/live/KSYMediaPlayerDy.framework; sourceTree = "<group>"; };
+		58C462961D37D376001BC26A /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
 		740BACF11D2227CF00CAD4EB /* KSYPlayerDemoDy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSYPlayerDemoDy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		740BACF21D2227D000CAD4EB /* KSYPlayerDemoDy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KSYPlayerDemoDy-Info.plist"; path = "/Users/zengfanping/workdir/ksyun/ksyplayer/ios/KSYPlayerDemo/KSYPlayerDemoDy-Info.plist"; sourceTree = "<absolute>"; };
 		7452D2151C198D38006DB5CC /* KSYPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYPlayerVC.h; sourceTree = "<group>"; };
@@ -163,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58E2C1891D2BD82700CA5432 /* KSYMediaPlayerDy.framework in Frameworks */,
+				58C462931D37D34D001BC26A /* KSYMediaPlayerDy.framework in Frameworks */,
 				740BACE21D2227CF00CAD4EB /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58E2C1871D2BD72B00CA5432 /* KSYMediaPlayer.framework in Frameworks */,
+				58C462971D37D376001BC26A /* KSYMediaPlayer.framework in Frameworks */,
 				7C9220BA1C984FC9005EF1D1 /* libsqlite3.tbd in Frameworks */,
 				7C89723D1C461FBC00535BC8 /* SystemConfiguration.framework in Frameworks */,
 				74B9EE311C159649003149E9 /* VideoToolbox.framework in Frameworks */,
@@ -188,8 +180,9 @@
 		74B9ED4F1C158675003149E9 = {
 			isa = PBXGroup;
 			children = (
-				58E2C1881D2BD82700CA5432 /* KSYMediaPlayerDy.framework */,
-				58E2C1861D2BD72B00CA5432 /* KSYMediaPlayer.framework */,
+				58C462961D37D376001BC26A /* KSYMediaPlayer.framework */,
+				58C462941D37D365001BC26A /* KSYMediaPlayerDy.framework */,
+				58C462921D37D34D001BC26A /* KSYMediaPlayerDy.framework */,
 				74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */,
 				74B9ED5A1C158675003149E9 /* KSYPlayerDemo */,
 				74B9ED591C158675003149E9 /* Products */,
@@ -271,7 +264,6 @@
 				740BACDF1D2227CF00CAD4EB /* Frameworks */,
 				740BACE81D2227CF00CAD4EB /* Resources */,
 				740BACEC1D2227CF00CAD4EB /* Embed Frameworks */,
-				580D6CBC1D2BD467009CB265 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -316,7 +308,7 @@
 					};
 					74B9ED571C158675003149E9 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = ZGJ54Q7R45;
+						DevelopmentTeam = PL4ALT6BMK;
 					};
 				};
 			};
@@ -606,7 +598,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = ../framework/live;
 				HEADER_SEARCH_PATHS = "";
@@ -621,7 +612,6 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.media.ios.KSYPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -630,7 +620,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = ../framework/live;
 				HEADER_SEARCH_PATHS = "";
@@ -645,7 +634,6 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ksyun.media.ios.KSYPlayerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

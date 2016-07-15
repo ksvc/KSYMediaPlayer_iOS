@@ -193,6 +193,16 @@
             <NodeRef refid="4"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCode3xxOverFlow</TokenIdentifier>
+            <Abstract type="html">次数过多的3xx跳转(8次)</Abstract>
+            <Declaration>KSYMPErrorCode3xxOverFlow</Declaration>
+            
+            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            
+            <NodeRef refid="4"/>
+        </Token>
+        
         
 	</File>
 </Tokens>

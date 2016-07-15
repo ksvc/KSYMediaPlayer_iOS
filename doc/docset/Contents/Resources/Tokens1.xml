@@ -1062,19 +1062,58 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setTimeout:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setSuperFastPlay:</TokenIdentifier>
+			<Abstract type="html">快速播放</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL superFastPlay</Declaration>
+			
+			
+			<Anchor>//api/name/superFastPlay</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/superFastPlay</TokenIdentifier>
+			<Abstract type="html">快速播放</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL superFastPlay</Declaration>
+			
+			
+			<Anchor>//api/name/superFastPlay</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/superFastPlay</TokenIdentifier>
+			<Abstract type="html">快速播放</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL superFastPlay</Declaration>
+			
+			
+			<Anchor>//api/name/superFastPlay</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setTimeout:readTimeout:</TokenIdentifier>
 			<Abstract type="html">timeout指定拉流超时时间,单位是秒</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
-			<Declaration>- (void)setTimeout:(int)timeout</Declaration>
+			<Declaration>- (void)setTimeout:(int)prepareTimeout readTimeout:(int)readTimeout</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>timeout</Name>
+					<Name>prepareTimeout</Name>
+					<Abstract type="html">建立链接超时时间，默认值是10秒</Abstract>
+				</Parameter><Parameter>
+					<Name>readTimeout</Name>
 					<Abstract type="html">拉流超时时间，默认值是30秒</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setTimeout:</Anchor>
+			<Anchor>//api/name/setTimeout:readTimeout:</Anchor>
             <NodeRef refid="1"/>
 		</Token>
 		
