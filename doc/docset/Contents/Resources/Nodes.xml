@@ -13,6 +13,10 @@
 					<Subnodes>
 						<NodeRef refid="1"/>
 						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
 						
 					</Subnodes>
 				</Node>
@@ -23,7 +27,7 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="3"/>
+						<NodeRef refid="7"/>
 						
 					</Subnodes>
 				</Node>
@@ -33,7 +37,10 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="4"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
 						
 					</Subnodes>
 				</Node>
@@ -43,8 +50,8 @@
                     <Name>Blocks</Name>
                     <Path>index.html</Path>
                     <Subnodes>
-                        <NodeRef refid="5"/>
-                        <NodeRef refid="6"/>
+                        <NodeRef refid="12"/>
+                        <NodeRef refid="13"/>
                         
                     </Subnodes>
                 </Node>
@@ -55,6 +62,93 @@
 	<Library>
 		
 		<Node id="1" type="file" documentType="reference">
+            <Name>KSYAudioInfo</Name>
+            <Path>Classes/KSYAudioInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KSYAudioInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KSYAudioInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KSYAudioInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>KSYMediaInfo</Name>
+            <Path>Classes/KSYMediaInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KSYMediaInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KSYMediaInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KSYMediaInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>KSYMediaInfoProber</Name>
+            <Path>Classes/KSYMediaInfoProber.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KSYMediaInfoProber.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KSYMediaInfoProber.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KSYMediaInfoProber.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/KSYMediaInfoProber.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
             <Name>KSYMoviePlayerController</Name>
             <Path>Classes/KSYMoviePlayerController.html</Path>
             
@@ -87,7 +181,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="2" type="file" documentType="reference">
+		<Node id="5" type="file" documentType="reference">
             <Name>KSYQosInfo</Name>
             <Path>Classes/KSYQosInfo.html</Path>
             
@@ -114,9 +208,36 @@
             </Subnodes>
             
         </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>KSYVideoInfo</Name>
+            <Path>Classes/KSYVideoInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/KSYVideoInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/KSYVideoInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/KSYVideoInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
 		
 		
-        <Node id="3" type="file" documentType="reference">
+        <Node id="7" type="file" documentType="reference">
             <Name>KSYMediaPlayback</Name>
             <Path>Protocols/KSYMediaPlayback.html</Path>
             
@@ -150,18 +271,33 @@
             
         </Node>
 		
-        <Node id="4" type="file" documentType="reference">
+        <Node id="8" type="file" documentType="reference">
             <Name>KSYMPErrorCode</Name>
             <Path>Constants/KSYMPErrorCode.html</Path>
             
         </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>MEDIAINFO_CODEC_ID</Name>
+            <Path>Constants/MEDIAINFO_CODEC_ID.html</Path>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>MEDIAINFO_MUX_TYPE</Name>
+            <Path>Constants/MEDIAINFO_MUX_TYPE.html</Path>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>MEDIAINFO_SAMPLE_FMT</Name>
+            <Path>Constants/MEDIAINFO_SAMPLE_FMT.html</Path>
+            
+        </Node>
 		
-        <Node id="5" type="file" documentType="reference">
+        <Node id="12" type="file" documentType="reference">
             <Name>KSYPlyAudioDataBlock</Name>
             <Path>Blocks/KSYPlyAudioDataBlock.html</Path>
             
         </Node>
-        <Node id="6" type="file" documentType="reference">
+        <Node id="13" type="file" documentType="reference">
             <Name>KSYPlyVideoDataBlock</Name>
             <Path>Blocks/KSYPlyVideoDataBlock.html</Path>
             

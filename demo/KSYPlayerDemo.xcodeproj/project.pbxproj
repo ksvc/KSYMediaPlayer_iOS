@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58C462931D37D34D001BC26A /* KSYMediaPlayerDy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C462921D37D34D001BC26A /* KSYMediaPlayerDy.framework */; };
-		58C462951D37D365001BC26A /* KSYMediaPlayerDy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58C462941D37D365001BC26A /* KSYMediaPlayerDy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		58C462971D37D376001BC26A /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C462961D37D376001BC26A /* KSYMediaPlayer.framework */; };
+		585CA67D1D43BFD100C39C6B /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585CA67C1D43BFD100C39C6B /* KSYMediaPlayer.framework */; };
+		585CA6801D43C00100C39C6B /* KSYProberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 585CA67F1D43C00100C39C6B /* KSYProberVC.m */; };
+		585CA6811D43C05400C39C6B /* KSYProberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 585CA67F1D43C00100C39C6B /* KSYProberVC.m */; };
+		585CA6831D43C07700C39C6B /* KSYMediaPlayerDy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 585CA6821D43C07700C39C6B /* KSYMediaPlayerDy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		740BACD61D2227CF00CAD4EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 955FDFC51CCF3EC300B37F54 /* ViewController.m */; };
 		740BACD71D2227CF00CAD4EB /* QRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4A4111CC085BE00CB6804 /* QRViewController.m */; };
 		740BACD81D2227CF00CAD4EB /* KSYSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4A40D1CC085BE00CB6804 /* KSYSQLite.m */; };
@@ -43,51 +44,6 @@
 		E328B4D81CCE087400BD31FC /* KSYDBCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = E328B4D71CCE087400BD31FC /* KSYDBCreater.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		740BACD41D2227CF00CAD4EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 746169441D211B17005941DF;
-			remoteInfo = KSYMediaDynamic;
-		};
-		740BACFF1D22290800CAD4EB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7452FC091C156E2900193E20;
-			remoteInfo = KSYMediaPlayer;
-		};
-		7461695E1D211F44005941DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 746169451D211B17005941DF;
-			remoteInfo = KSYMediaDynamic;
-		};
-		74B9EE121C158DBB003149E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7452FBEF1C156E1000193E20;
-			remoteInfo = KSYPlayerCore;
-		};
-		74B9EE141C158DBB003149E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7452FBFC1C156E2000193E20;
-			remoteInfo = KSYMediaPlayerCore;
-		};
-		74B9EE161C158DBB003149E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7452FC0A1C156E2900193E20;
-			remoteInfo = KSYMediaPlayer;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		740BACEC1D2227CF00CAD4EB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -95,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				58C462951D37D365001BC26A /* KSYMediaPlayerDy.framework in Embed Frameworks */,
+				585CA6831D43C07700C39C6B /* KSYMediaPlayerDy.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,9 +69,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		58C462921D37D34D001BC26A /* KSYMediaPlayerDy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayerDy.framework; path = ../framework/live/KSYMediaPlayerDy.framework; sourceTree = "<group>"; };
-		58C462941D37D365001BC26A /* KSYMediaPlayerDy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayerDy.framework; path = ../framework/live/KSYMediaPlayerDy.framework; sourceTree = "<group>"; };
-		58C462961D37D376001BC26A /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
+		585CA67C1D43BFD100C39C6B /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
+		585CA67E1D43C00100C39C6B /* KSYProberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYProberVC.h; sourceTree = "<group>"; };
+		585CA67F1D43C00100C39C6B /* KSYProberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYProberVC.m; sourceTree = "<group>"; };
+		585CA6821D43C07700C39C6B /* KSYMediaPlayerDy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayerDy.framework; path = ../framework/live/KSYMediaPlayerDy.framework; sourceTree = "<group>"; };
 		740BACF11D2227CF00CAD4EB /* KSYPlayerDemoDy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSYPlayerDemoDy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		740BACF21D2227D000CAD4EB /* KSYPlayerDemoDy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KSYPlayerDemoDy-Info.plist"; path = "/Users/zengfanping/workdir/ksyun/ksyplayer/ios/KSYPlayerDemo/KSYPlayerDemoDy-Info.plist"; sourceTree = "<absolute>"; };
 		7452D2151C198D38006DB5CC /* KSYPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYPlayerVC.h; sourceTree = "<group>"; };
@@ -128,7 +85,6 @@
 		74B9ED671C158675003149E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74B9ED6A1C158675003149E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74B9ED6C1C158675003149E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = ../IJKMediaPlayer/IJKMediaPlayer.xcodeproj; sourceTree = "<group>"; };
 		74B9EE281C159629003149E9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		74B9EE2A1C159630003149E9 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		74B9EE2C1C159638003149E9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
@@ -155,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58C462931D37D34D001BC26A /* KSYMediaPlayerDy.framework in Frameworks */,
 				740BACE21D2227CF00CAD4EB /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58C462971D37D376001BC26A /* KSYMediaPlayer.framework in Frameworks */,
+				585CA67D1D43BFD100C39C6B /* KSYMediaPlayer.framework in Frameworks */,
 				7C9220BA1C984FC9005EF1D1 /* libsqlite3.tbd in Frameworks */,
 				7C89723D1C461FBC00535BC8 /* SystemConfiguration.framework in Frameworks */,
 				74B9EE311C159649003149E9 /* VideoToolbox.framework in Frameworks */,
@@ -180,10 +135,8 @@
 		74B9ED4F1C158675003149E9 = {
 			isa = PBXGroup;
 			children = (
-				58C462961D37D376001BC26A /* KSYMediaPlayer.framework */,
-				58C462941D37D365001BC26A /* KSYMediaPlayerDy.framework */,
-				58C462921D37D34D001BC26A /* KSYMediaPlayerDy.framework */,
-				74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */,
+				585CA6821D43C07700C39C6B /* KSYMediaPlayerDy.framework */,
+				585CA67C1D43BFD100C39C6B /* KSYMediaPlayer.framework */,
 				74B9ED5A1C158675003149E9 /* KSYPlayerDemo */,
 				74B9ED591C158675003149E9 /* Products */,
 				740BACF21D2227D000CAD4EB /* KSYPlayerDemoDy-Info.plist */,
@@ -202,6 +155,8 @@
 		74B9ED5A1C158675003149E9 /* KSYPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				585CA67E1D43C00100C39C6B /* KSYProberVC.h */,
+				585CA67F1D43C00100C39C6B /* KSYProberVC.m */,
 				955FDFC41CCF3EC300B37F54 /* ViewController.h */,
 				955FDFC51CCF3EC300B37F54 /* ViewController.m */,
 				95B4A40A1CC085BE00CB6804 /* KSYLiveVC.h */,
@@ -242,17 +197,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		74B9EE071C158DBA003149E9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				74B9EE131C158DBB003149E9 /* libKSYPlayerCore.a */,
-				74B9EE151C158DBB003149E9 /* libKSYMediaPlayerCore.a */,
-				74B9EE171C158DBB003149E9 /* KSYMediaPlayer.framework */,
-				7461695F1D211F44005941DF /* KSYMediaPlayerDy.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,7 +212,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				740BACD31D2227CF00CAD4EB /* PBXTargetDependency */,
 			);
 			name = KSYPlayerDemoDy;
 			productName = KSYPlayerDemo;
@@ -287,7 +230,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				740BAD001D22290800CAD4EB /* PBXTargetDependency */,
 			);
 			name = KSYPlayerDemo;
 			productName = KSYPlayerDemo;
@@ -323,12 +265,6 @@
 			mainGroup = 74B9ED4F1C158675003149E9;
 			productRefGroup = 74B9ED591C158675003149E9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 74B9EE071C158DBA003149E9 /* Products */;
-					ProjectRef = 74B9EE061C158DBA003149E9 /* IJKMediaPlayer.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				74B9ED571C158675003149E9 /* KSYPlayerDemo */,
@@ -336,37 +272,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7461695F1D211F44005941DF /* KSYMediaPlayerDy.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KSYMediaPlayerDy.framework;
-			remoteRef = 7461695E1D211F44005941DF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74B9EE131C158DBB003149E9 /* libKSYPlayerCore.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libKSYPlayerCore.a;
-			remoteRef = 74B9EE121C158DBB003149E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74B9EE151C158DBB003149E9 /* libKSYMediaPlayerCore.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libKSYMediaPlayerCore.a;
-			remoteRef = 74B9EE141C158DBB003149E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		74B9EE171C158DBB003149E9 /* KSYMediaPlayer.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = KSYMediaPlayer.framework;
-			remoteRef = 74B9EE161C158DBB003149E9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		740BACE81D2227CF00CAD4EB /* Resources */ = {
@@ -396,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585CA6811D43C05400C39C6B /* KSYProberVC.m in Sources */,
 				740BACD61D2227CF00CAD4EB /* ViewController.m in Sources */,
 				740BACD71D2227CF00CAD4EB /* QRViewController.m in Sources */,
 				740BACD81D2227CF00CAD4EB /* KSYSQLite.m in Sources */,
@@ -420,24 +326,12 @@
 				E328B4D81CCE087400BD31FC /* KSYDBCreater.m in Sources */,
 				95B4A4141CC085BE00CB6804 /* KSYSQLiteManager.m in Sources */,
 				95B4A4121CC085BE00CB6804 /* KSYLiveVC.m in Sources */,
+				585CA6801D43C00100C39C6B /* KSYProberVC.m in Sources */,
 				74B9ED5D1C158675003149E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		740BACD31D2227CF00CAD4EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KSYMediaDynamic;
-			targetProxy = 740BACD41D2227CF00CAD4EB /* PBXContainerItemProxy */;
-		};
-		740BAD001D22290800CAD4EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = KSYMediaPlayer;
-			targetProxy = 740BACFF1D22290800CAD4EB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		74B9ED641C158675003149E9 /* Main.storyboard */ = {
