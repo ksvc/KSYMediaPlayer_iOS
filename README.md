@@ -45,6 +45,7 @@ KSY MediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及�
 * doc/ 目录存放接口参考文档，双击打开html/index.html即可看到相关appledoc风格的接口说明，也可以查看[在线版](http://ksvc.github.io/KSYMediaPlayer_iOS/html/index.html)。 
 * framework/ 目录存放了KSYMediaPlayer.framework，该库支持armv7/arm64/x86_64和i386四种体系结构。 
 * README.md 即本文档。
+
 ### 4.2 oschina下载
 * 从oschina下载：[http://git.oschina.net/ksvc/KSYMediaPlayer_iOS](http://git.oschina.net/ksvc/KSYMediaPlayer_iOS)
 
