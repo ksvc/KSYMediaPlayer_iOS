@@ -27,6 +27,10 @@ KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用�
 | 视频编码格式 | H264, H265, MPEG4, MJPEG, JPEG2000, GIF | H263, H264, H265, MPEG2, MPEG4, MJPEG, VC-1, WMV, RV40, PNG, JPEG, YUV, WEBP, TIFF|
 | 音频编码格式 | AAC, MP3, NELLYMOSER |AAC, MP3, AMR, APE, DTS, FLAC, PCM, OGG, WMA, COOK, NELLYMOSER|
 
+### 文档说明
+
+[详情请见wiki](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki)
+
 ## 3. 运行环境
 KSY MediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及以上版本; 支持 armv7/arm64以及虚拟机运行。
 
