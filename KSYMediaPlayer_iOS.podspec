@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'FanpingZeng' => 'zengfanping@kingsoft.com' }
   spec.summary      = 'KSYMediaPlayer_iOS sdk manages the playback of a movie or live streaming.'
   spec.description  = <<-DESC
-    KSYMediaPlayer_iOS sdk supoort iOS 7.0 and later, 
+    KSYUN Live Streaming player SDK, upporting RTMP HTTP-FLV HLS protocol, Living delay less than 2 or 3 seconds.
   DESC
   spec.platform     = :ios, '7.0'
   spec.requires_arc = true
