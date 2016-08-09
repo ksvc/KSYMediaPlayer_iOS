@@ -12,13 +12,12 @@ Pod::Spec.new do |spec|
   spec.summary      = 'KSYMediaPlayer_iOS sdk manages the playback of a movie or live streaming.'
   spec.description  = <<-DESC
     KSYUN Live Streaming player SDK, upporting RTMP HTTP-FLV HLS protocol, Living delay less than 2 or 3 seconds.
+    KSYMediaPlayer_iOS.framework is a static framework.
   DESC
   spec.platform     = :ios, '7.0'
   spec.requires_arc = true
   spec.frameworks   = 'VideoToolbox'
   spec.ios.library = 'z', 'iconv', 'stdc++.6'
   spec.source = { :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git', :tag => 'v1.6.0'}
-  spec.preserve_paths      = 'framework/live/KSYMediaPlayer.framework'
-  spec.public_header_files = 'framework/live/KSYMediaPlayer.framework/Headers'
   spec.vendored_frameworks = 'framework/live/KSYMediaPlayer.framework'
 end
