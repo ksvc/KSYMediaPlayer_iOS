@@ -133,6 +133,16 @@
             <NodeRef refid="10"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_MUXTYPE_HLS</TokenIdentifier>
+            <Abstract type="html">封装格式为HLS</Abstract>
+            <Declaration>MEDIAINFO_MUXTYPE_HLS</Declaration>
+            
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
+            
+            <NodeRef refid="10"/>
+        </Token>
+        
         
 	</File>
 </Tokens>

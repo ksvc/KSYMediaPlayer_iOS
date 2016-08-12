@@ -853,7 +853,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setShouldMute:</TokenIdentifier>
-			<Abstract type="html">是否静音</Abstract>
+			<Abstract type="html">是否静音
+</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) BOOL shouldMute</Declaration>
@@ -865,7 +866,8 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/shouldMute</TokenIdentifier>
-			<Abstract type="html">是否静音</Abstract>
+			<Abstract type="html">是否静音
+</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) BOOL shouldMute</Declaration>
@@ -877,13 +879,53 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/shouldMute</TokenIdentifier>
-			<Abstract type="html">是否静音</Abstract>
+			<Abstract type="html">是否静音
+</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic) BOOL shouldMute</Declaration>
 			
 			
 			<Anchor>//api/name/shouldMute</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setShouldHideVideo:</TokenIdentifier>
+			<Abstract type="html">是否隐藏视频
+</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldHideVideo</Declaration>
+			
+			
+			<Anchor>//api/name/shouldHideVideo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/shouldHideVideo</TokenIdentifier>
+			<Abstract type="html">是否隐藏视频
+</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldHideVideo</Declaration>
+			
+			
+			<Anchor>//api/name/shouldHideVideo</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/shouldHideVideo</TokenIdentifier>
+			<Abstract type="html">是否隐藏视频
+</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL shouldHideVideo</Declaration>
+			
+			
+			<Anchor>//api/name/shouldHideVideo</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
@@ -1220,22 +1262,22 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reload:is_flush:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reload:flush:</TokenIdentifier>
 			<Abstract type="html">重新启动拉流</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
-			<Declaration>- (void)reload:(NSURL *)aUrl is_flush:(bool)is_flush</Declaration>
+			<Declaration>- (void)reload:(NSURL *)aUrl flush:(bool)flush</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>aUrl</Name>
 					<Abstract type="html">视频播放地址，该地址可以是本地地址或者服务器地址.如果为nil，则使用前一次播放地址</Abstract>
 				</Parameter><Parameter>
-					<Name>is_flush</Name>
+					<Name>flush</Name>
 					<Abstract type="html">是否清除上一个url的缓冲区内容，该值为FALSE不清除，为TRUE则清除</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/reload:is_flush:</Anchor>
+			<Anchor>//api/name/reload:flush:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
