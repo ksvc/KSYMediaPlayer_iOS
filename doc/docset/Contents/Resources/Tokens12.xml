@@ -33,6 +33,26 @@
             <NodeRef refid="12"/>
         </Token>
         
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MPMovieStatusHWCodecUsed</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MPMovieStatusHWCodecUsed</Declaration>
+            
+            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MPMovieStatusSWCodecUsed</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>MPMovieStatusSWCodecUsed</Declaration>
+            
+            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            
+            <NodeRef refid="12"/>
+        </Token>
+        
         
 	</File>
 </Tokens>
