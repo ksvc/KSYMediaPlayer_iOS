@@ -31,10 +31,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setContentURL:</TokenIdentifier>
-			<Abstract type="html">视频文件的URL地址，该地址可以是本地地址或者服务器地址。</Abstract>
+			<Abstract type="html">正在播放的视频文件的URL地址，该地址可以是本地地址或者服务器地址。</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NSURL *contentURL</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSURL *contentURL</Declaration>
 			
 			
 			<Anchor>//api/name/contentURL</Anchor>
@@ -43,10 +43,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/contentURL</TokenIdentifier>
-			<Abstract type="html">视频文件的URL地址，该地址可以是本地地址或者服务器地址。</Abstract>
+			<Abstract type="html">正在播放的视频文件的URL地址，该地址可以是本地地址或者服务器地址。</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NSURL *contentURL</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSURL *contentURL</Declaration>
 			
 			
 			<Anchor>//api/name/contentURL</Anchor>
@@ -55,10 +55,10 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/contentURL</TokenIdentifier>
-			<Abstract type="html">视频文件的URL地址，该地址可以是本地地址或者服务器地址。</Abstract>
+			<Abstract type="html">正在播放的视频文件的URL地址，该地址可以是本地地址或者服务器地址。</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NSURL *contentURL</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSURL *contentURL</Declaration>
 			
 			
 			<Anchor>//api/name/contentURL</Anchor>
@@ -1257,22 +1257,62 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reload:</TokenIdentifier>
+			<Abstract type="html">重新启动拉流</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (void)reload:(NSURL *)aUrl</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aUrl</Name>
+					<Abstract type="html">视频播放地址，该地址可以是本地地址或者服务器地址.如果为nil，则使用前一次播放地址</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reload:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reload:flush:</TokenIdentifier>
 			<Abstract type="html">重新启动拉流</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
-			<Declaration>- (void)reload:(NSURL *)aUrl flush:(bool)flush</Declaration>
+			<Declaration>- (void)reload:(NSURL *)aUrl flush:(BOOL)flush</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>aUrl</Name>
 					<Abstract type="html">视频播放地址，该地址可以是本地地址或者服务器地址.如果为nil，则使用前一次播放地址</Abstract>
 				</Parameter><Parameter>
 					<Name>flush</Name>
-					<Abstract type="html">是否清除上一个url的缓冲区内容，该值为FALSE不清除，为TRUE则清除</Abstract>
+					<Abstract type="html">是否清除上一个url的缓冲区内容，该值为NO不清除，为YES则清除</Abstract>
 				</Parameter>
 			</Parameters>
 			
 			<Anchor>//api/name/reload:flush:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reload:flush:mode:</TokenIdentifier>
+			<Abstract type="html">重新启动拉流</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (void)reload:(NSURL *)aUrl flush:(bool)flush mode:(MPMovieReloadMode)mode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aUrl</Name>
+					<Abstract type="html">视频播放地址，该地址可以是本地地址或者服务器地址.如果为nil，则使用前一次播放地址</Abstract>
+				</Parameter><Parameter>
+					<Name>flush</Name>
+					<Abstract type="html">是否清除上一个url的缓冲区内容，该值为NO不清除，为YES则清除</Abstract>
+				</Parameter><Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">配置reload后的加载模式，该值为MPMovieReloadMode_Accurate则启用精准查找模式播放</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/reload:flush:mode:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
@@ -1306,14 +1346,19 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reset</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/reset:</TokenIdentifier>
 			<Abstract type="html">重置播放器</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
-			<Declaration>- (void)reset</Declaration>
+			<Declaration>- (void)reset:(BOOL)holdLastPic</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>holdLastPic</Name>
+					<Abstract type="html">是否保留最后一帧</Abstract>
+				</Parameter>
+			</Parameters>
 			
-			
-			<Anchor>//api/name/reset</Anchor>
+			<Anchor>//api/name/reset:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

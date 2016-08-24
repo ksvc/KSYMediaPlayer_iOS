@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>MPMovieVideoDecoderMode Constants Reference</title>
+	<title>MPMovieReloadMode Constants Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -59,7 +59,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">MPMovieVideoDecoderMode Constants Reference</h1>
+					<h1 class="title">MPMovieReloadMode Constants Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -75,11 +75,11 @@
 					
 
                     
-                    <h3 class="subsubtitle method-title">MPMovieVideoDecoderMode</h3>
+                    <h3 class="subsubtitle method-title">MPMovieReloadMode</h3>
                     
 					
 					<div class="section section-overview">
-                        <p>视频解码模式</p>
+                        <p>reload模式</p>
 					</div>
 					
 					
@@ -87,13 +87,11 @@
                         <!-- display enum values -->
                         
                         <h4 class="method-subtitle">Definition</h4>
-                        <code>typedef NS_ENUM(NSUInteger, MPMovieVideoDecoderMode ) {<br>
+                        <code>typedef NS_ENUM(NSUInteger, MPMovieReloadMode ) {<br>
                             
-                            &nbsp;&nbsp; <a href="">MPMovieVideoDecoderMode_Software</a> = 0,<br>
+                            &nbsp;&nbsp; <a href="">MPMovieReloadMode_Fast</a>,<br>
                             
-                            &nbsp;&nbsp; <a href="">MPMovieVideoDecoderMode_Hardware</a>,<br>
-                            
-                            &nbsp;&nbsp; <a href="">MPMovieVideoDecoderMode_AUTO</a>,<br>
+                            &nbsp;&nbsp; <a href="">MPMovieReloadMode_Accurate</a>,<br>
                             
                             };</code>
                     
@@ -103,11 +101,11 @@
                         <h4 class="method-subtitle">Constants</h4>
                         <dl class="termdef">
                             
-                            <dt><a name="" title="MPMovieVideoDecoderMode_Software"></a><code>MPMovieVideoDecoderMode_Software</code></dt>
+                            <dt><a name="" title="MPMovieReloadMode_Fast"></a><code>MPMovieReloadMode_Fast</code></dt>
 <dd>
 
 
-<p>视频解码方式采用软解</p>
+<p>加速播放模式</p>
 
 
 
@@ -120,28 +118,11 @@
 	
 </dd>
                             
-                            <dt><a name="" title="MPMovieVideoDecoderMode_Hardware"></a><code>MPMovieVideoDecoderMode_Hardware</code></dt>
+                            <dt><a name="" title="MPMovieReloadMode_Accurate"></a><code>MPMovieReloadMode_Accurate</code></dt>
 <dd>
 
 
-<p>视频解码方式采用硬解</p>
-
-
-
-
-
-    
-	<p>
-		Declared In <code class="declared-in-ref">KSYMoviePlayerDefines.h</code>.
-	</p>
-	
-</dd>
-                            
-                            <dt><a name="" title="MPMovieVideoDecoderMode_AUTO"></a><code>MPMovieVideoDecoderMode_AUTO</code></dt>
-<dd>
-
-
-<p>自动选择解码方式，8.0以上的系统优先选择硬解</p>
+<p>精确检测模式</p>
 
 
 
