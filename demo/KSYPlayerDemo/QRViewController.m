@@ -17,6 +17,9 @@
     CALayer     *_scanLayer;            //扫描图层
     CGFloat     _width;
     CGFloat     _height;
+    CGFloat     _btnWdt;
+    
+    UIButton    *_cancelBtn;             // 退出扫码界面
     
 }
 - (BOOL)startReading;
@@ -49,7 +52,27 @@
     _viewPreview = [self addViewPreview];
     _QRLabel     = [self addLable];
     _scanBtn     = [self addButton];
+    _cancelBtn   = [self addCancelButton];
 }
+
+- (UIButton *)addCancelButton {
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(_width / 2, _height - 30, _width / 2, 30)];
+    [self.view addSubview:button];
+    [button setTitle:@"取消" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(quitQRScaner) forControlEvents:UIControlEventTouchUpInside];
+    button.layer.masksToBounds = YES;
+    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    button.layer.masksToBounds = YES;
+    button.layer.borderColor   = [UIColor blackColor].CGColor;
+    button.layer.borderWidth   = 1;
+    button.layer.cornerRadius  = 5;
+    return button;
+}
+
+- (void)quitQRScaner {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (UIView *)addViewPreview{
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 64, _width, _height - 94)];
     [self.view addSubview:view];
@@ -67,7 +90,7 @@
     return label;
 }
 - (UIButton *)addButton{
-    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, _height - 30, _width, 30)];
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, _height - 30, _width / 2, 30)];
     [self.view addSubview:button];
     [button setTitle:@"正在扫描..." forState:UIControlStateNormal];
     [button addTarget:self action:@selector(reScan) forControlEvents:UIControlEventTouchUpInside];
@@ -193,8 +216,6 @@
             [_QRLabel performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
             [self performSelectorOnMainThread:@selector(stopReading) withObject:nil waitUntilDone:NO];
             _isReading = NO;
-            
-            
         }
     }
 }
@@ -207,7 +228,7 @@
     if (self.getQrCode) {
         self.getQrCode(_QRLabel.text);
     }
-    [self.navigationController popViewControllerAnimated:FALSE];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -8,17 +8,20 @@
 #import "ViewController.h"
 #import "KSYPlayerVC.h"
 #import "KSYProberVC.h"
+#import "MonkeyTestViewController.h"
 
 @interface ViewController ()
 
 @property KSYPlayerVC * playerVC;
 @property KSYProberVC * proberVC;
+@property MonkeyTestViewController * monkeyTestVC;
 @property NSURL * url;
 @end
 
 @implementation ViewController{
     UIButton *btnPlay;
     UIButton *btnProbe;
+    UIButton *btnNote;
 }
 
 - (void)viewDidLoad {
@@ -45,8 +48,14 @@
     [btnProbe addTarget:self action:@selector(onProber:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnProbe];
     
+    btnNote = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btnNote setTitle:@"Monkey Test" forState: UIControlStateNormal];
+    btnNote.backgroundColor = [UIColor lightGrayColor];
+    [btnNote addTarget:self action:@selector(onNote:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnNote];
+    
    _url = [NSURL URLWithString:@"http://maichang.kssws.ks-cdn.com/upload20150716161913.mp4"];
-   _url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
+//   _url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
   // _url = [NSURL URLWithString:@"http://test.live.ksyun.com/live/sxm.flv"];
    //_url = [NSURL URLWithString:@"http://120.132.75.127/vod/mov/shilei_hw_rotate_error.mov"];
     //_url = [NSURL URLWithString:@"http://cxy.kss.ksyun.com/h265_56c1f0717c63f102.mp4"];
@@ -54,6 +63,8 @@
     
     _playerVC   = [[KSYPlayerVC alloc] initWithURL:_url];
     _proberVC  =  [[KSYProberVC alloc] initWithURL:_url];
+    
+    _monkeyTestVC = [[MonkeyTestViewController alloc] init];
     
     [self layoutUI];
     
@@ -72,6 +83,9 @@
 
     yPos = (hgt - btnHgt*3) / 2  + btnHgt;
     btnProbe.frame = CGRectMake( xPos, yPos, btnWdt, btnHgt);
+    
+    yPos = (hgt - btnHgt*3) / 2  + btnHgt * 3;
+    btnNote.frame = CGRectMake( xPos, yPos, btnWdt, btnHgt);
 }
 
 - (IBAction)onPlayer:(id)sender {
@@ -80,6 +94,12 @@
 
 - (IBAction)onProber:(id)sender {
     [self presentViewController:_proberVC animated:true completion:nil];
+}
+
+- (IBAction)onNote:(id)sender {
+    [self presentViewController:_monkeyTestVC
+                       animated:YES
+                     completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
