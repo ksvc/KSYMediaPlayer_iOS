@@ -12,23 +12,14 @@
 #import "KSYProgressView.h"
 
 @interface KSYPlayerVC () <UITextFieldDelegate>
-@property (strong, nonatomic) NSMutableArray *urls;
 @property (strong, nonatomic) NSURL *url;
 @property (strong, nonatomic) NSURL *reloadUrl;
 @property (strong, nonatomic) KSYMoviePlayerController *player;
 @end
 
-#define dispatch_main_sync_safe(block)\
-if ([NSThread isMainThread]) {\
-block();\
-} else {\
-dispatch_sync(dispatch_get_main_queue(), block);\
-}
-
 @implementation KSYPlayerVC{
     UILabel *stat;
     NSTimer* timer;
-    NSTimer* repeateTimer;
     double lastSize;
     NSTimeInterval lastCheckTime;
     NSString* serverIp;
@@ -41,7 +32,6 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     UIButton *btnRotate;
     UIButton *btnContentMode;
     UIButton *btnReload;
-    UIButton *btnRepeat;
     
     UIButton *btnMute;
     
@@ -77,10 +67,7 @@ dispatch_sync(dispatch_get_main_queue(), block);\
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _urls = [NSMutableArray array];
-    
     [self initUI];
-    repeateTimer = nil;
     
     [self addObserver:self forKeyPath:@"player" options:NSKeyValueObservingOptionNew context:nil];
     
@@ -133,9 +120,6 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     //add reload button
     btnReload = [self addButtonWithTitle:@"reload" action:@selector(onReloadVideo:)];
     
-    //add repeate play button
-    btnRepeat = [self addButtonWithTitle:@"repeat" action:@selector(onRepeatPlay:)];
-    
     btnShotScreen = [self addButtonWithTitle:@"截图" action:@selector(onShotScreen:)];
     
     btnMute = [self addButtonWithTitle:@"mute" action:@selector(onMute:)];
@@ -174,6 +158,7 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     [self layoutUI];
     
     [self.view bringSubviewToFront:stat];
+    stat.frame = [UIScreen mainScreen].bounds;
 }
 - (UIButton *)addButtonWithTitle:(NSString *)title action:(SEL)action{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -236,8 +221,6 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     xPos = gap;
     yPos = btnRotate.frame.origin.y - btnHgt - gap;
     progressView.frame = CGRectMake(xPos, yPos, wdt - 2 * gap, btnHgt);
-    
-    stat.frame = CGRectMake(0, 0, wdt, hgt);
 }
 
 - (BOOL)shouldAutorotate {
@@ -301,7 +284,7 @@ dispatch_sync(dispatch_get_main_queue(), block);\
         // using autoPlay to start live stream
         //        [_player play];
         serverIp = [_player serverAddress];
-        NSLog(@"KSYPlayerVC: %@ -- ip:%@", _url, serverIp);
+        NSLog(@"KSYPlayerVC: %@ -- ip:%@", [[_player contentURL] absoluteString], serverIp);
         [self StartTimer];
     }
     if (MPMoviePlayerPlaybackStateDidChangeNotification ==  notify.name) {
@@ -563,7 +546,7 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     {
         [self initPlayerWithURL:_url];
     } else {
-        [_player setUrl:_url];
+        [_player setUrl:[NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"]];
         [_player prepareToPlay];
     }
 }
@@ -587,56 +570,6 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     }
 }
 
-- (void)randomPlay {
-    NSURL *randomURL = [_urls objectAtIndex:arc4random() % _urls.count];
-    if (_player == nil) {
-        [self initPlayerWithURL:randomURL];
-    } else {
-        [_player reset:NO];
-        [_player setUrl:randomURL];
-        [_player prepareToPlay];
-    }
-}
-
-- (void)repeatPlay:(NSTimer *)t {
-    if (_urls.count > 0) {
-        if(nil == _player||arc4random() % 20 == 0 || _player.currentPlaybackTime > 60)
-        {
-            dispatch_main_sync_safe(^{
-                [self onStopVideo:nil];
-                [self randomPlay];
-                _player.bufferTimeMax = (arc4random() % 8) - 1;
-                NSLog(@"bufferTimeMax %f", _player.bufferTimeMax);
-            });
-            stat.text = [NSString stringWithFormat:@"change stream"];
-        }else if(arc4random() % 15 == 0){
-            [self onReloadVideo:nil];
-            stat.text = [NSString stringWithFormat:@"reload stream"];
-        }else if(arc4random() % 25 == 0){
-            switchHwCodec.on = !switchHwCodec.isOn;
-            stat.text = [NSString stringWithFormat:@"%@", switchHwCodec.isOn ? @"hardware codec" : @"software codec"];
-        }
-    }
-}
-- (IBAction)onRepeatPlay:(id)sender{
-    if ([repeateTimer isValid]) {
-        [repeateTimer invalidate];
-    }else{
-        URLTableViewController *URLTableVC = [[URLTableViewController alloc] initWithURLs:_urls];
-        URLTableVC.getURLs = ^(NSArray<NSURL *> *scannedURLs){
-            [_urls removeAllObjects];
-            for (NSURL *url in scannedURLs) {
-                [_urls addObject:url];
-            }
-            
-            [repeateTimer fire];
-        };
-        UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:URLTableVC];
-        [self presentViewController:navVC animated:YES completion:nil];
-        
-        repeateTimer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(repeatPlay:) userInfo:nil repeats:YES];
-    }
-}
 - (IBAction)onStopVideo:(id)sender {
     if (_player) {
         NSLog(@"player download flow size: %f MB", _player.readSize);
@@ -687,29 +620,31 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     NSDictionary *meta = [_player getMetadata];
     KSYQosInfo *info = _player.qosInfo;
     stat.text = [NSString stringWithFormat:@
-                 "SDK Version:v%@\n"
-                 "player instance:%p\n"
-                 "streamerUrl:%@\n"
-                 "serverIp:%@\n"
-                 "clientIp:%@\n"
-                 "localDnsIp:%@\n"
-                 "Resolution:(w-h: %.0f-%.0f)\n"
-                 "play time:%.1fs\n"
-                 "playable Time:%.1fs\n"
-                 "video duration%.1fs\n"
-                 "cached times:%.1fs/%ld\n"
-                 "cached max time:%.1fs\n"
-                 "speed: %0.1f kbps\nvideo/audio render cost time:%dms/%dms\n"
-                 "HttpConnectTime:%@\n"
-                 "HttpAnalyzeDns:%@\n"
-                 "HttpFirstDataTime:%@\n"
-                 "audioBufferByteLength:%d\n"
-                 "audioBufferTimeLength:%d\n"
-                 "audioTotalDataSize:%lld\n"
-                 "videoBufferByteLength:%d\n"
-                 "videoBufferTimeLength:%d\n"
-                 "videoTotalDataSize:%lld\n"
-                 "totalDataSize:%lld\n",
+                 "SDK版本:v%@\n"
+                 "播放器实例:%p\n"
+                 "拉流URL:%@\n"
+                 "服务器IP:%@\n"
+                 "客户端IP:%@\n"
+                 "本地DNS IP:%@\n"
+                 "分辨率:(宽-高: %.0f-%.0f)\n"
+                 "已播时长:%.1fs\n"
+                 "缓存时长:%.1fs\n"
+                 "视频总长%.1fs\n"
+                 "cache次数:%.1fs/%ld\n"
+                 "最大缓冲时长:%.1fs\n"
+                 "速度: %0.1f kbps\n视频/音频渲染用时:%dms/%dms\n"
+                 "HTTP连接用时:%ldms\n"
+                 "DNS解析用时:%ldms\n"
+                 "首包到达用时（连接建立后）:%ldms\n"
+                 "音频缓冲队列长度:%.1fMB\n"
+                 "音频缓冲队列时长:%.1fs\n"
+                 "音频缓冲区数据量:%.1fMB\n"
+                 "视频缓冲队列长度:%.1fMB\n"
+                 "视频缓冲队列时长:%.1fs\n"
+                 "视频缓冲区数据量:%.1fMB\n"
+                 "缓冲区总数据量%.1fMB\n"
+                 "解码帧率:%.2f 显示帧率:%.2f\n",
+
                  [_player getVersion],
                  _player,
                  [[_player contentURL] absoluteString],
@@ -725,16 +660,18 @@ dispatch_sync(dispatch_get_main_queue(), block);\
                  _player.bufferTimeMax,
                  8*1024.0*(flowSize - lastSize)/([self getCurrentTime] - lastCheckTime),
                  fvr_costtime, far_costtime,
-                 [meta objectForKey:kKSYPLYHttpConnectTime],
-                 [meta objectForKey:kKSYPLYHttpAnalyzeDns],
-                 [meta objectForKey:kKSYPLYHttpFirstDataTime],
-                 info.audioBufferByteLength,
-                 info.audioBufferTimeLength,
-                 info.audioTotalDataSize,
-                 info.videoBufferByteLength,
-                 info.videoBufferTimeLength,
-                 info.videoTotalDataSize,
-                 info.totalDataSize];
+                 (long)[(NSNumber *)[meta objectForKey:kKSYPLYHttpConnectTime] integerValue],
+                 (long)[(NSNumber *)[meta objectForKey:kKSYPLYHttpAnalyzeDns] integerValue],
+                 (long)[(NSNumber *)[meta objectForKey:kKSYPLYHttpFirstDataTime] integerValue],
+                 (float)info.audioBufferByteLength / 1e6,
+                 (float)info.audioBufferTimeLength / 1e3,
+                 (float)info.audioTotalDataSize / 1e6,
+                 (float)info.videoBufferByteLength / 1e6,
+                 (float)info.videoBufferTimeLength / 1e3,
+                 (float)info.videoTotalDataSize / 1e6,
+                 (float)info.totalDataSize / 1e6,
+                 info.videoDecodeFPS,
+                 info.videoRefreshFPS];
     lastCheckTime = [self getCurrentTime];
     lastSize = flowSize;
     
@@ -757,7 +694,7 @@ dispatch_sync(dispatch_get_main_queue(), block);\
         [_player.view removeFromSuperview];
         self.player = nil;
     }
-    //[self.navigationController popToRootViewControllerAnimated:FALSE];
+    
     [self dismissViewControllerAnimated:FALSE completion:nil];
     stat.text = nil;
 }
@@ -849,7 +786,6 @@ dispatch_sync(dispatch_get_main_queue(), block);\
         } else {
             progressView.hidden = YES;
         }
-        
     }
 }
 

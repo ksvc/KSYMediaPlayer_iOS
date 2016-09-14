@@ -264,6 +264,78 @@
             <NodeRef refid="5"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYQosInfo/setVideoDecodeFPS:</TokenIdentifier>
+			<Abstract type="html">    video decode frame count per second</Abstract>
+			<DeclaredIn>KSYQosInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float videoDecodeFPS</Declaration>
+			
+			
+			<Anchor>//api/name/videoDecodeFPS</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYQosInfo/videoDecodeFPS</TokenIdentifier>
+			<Abstract type="html">    video decode frame count per second</Abstract>
+			<DeclaredIn>KSYQosInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float videoDecodeFPS</Declaration>
+			
+			
+			<Anchor>//api/name/videoDecodeFPS</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYQosInfo/videoDecodeFPS</TokenIdentifier>
+			<Abstract type="html">    video decode frame count per second</Abstract>
+			<DeclaredIn>KSYQosInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float videoDecodeFPS</Declaration>
+			
+			
+			<Anchor>//api/name/videoDecodeFPS</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYQosInfo/setVideoRefreshFPS:</TokenIdentifier>
+			<Abstract type="html">    video refresh frame count per second</Abstract>
+			<DeclaredIn>KSYQosInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float videoRefreshFPS</Declaration>
+			
+			
+			<Anchor>//api/name/videoRefreshFPS</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYQosInfo/videoRefreshFPS</TokenIdentifier>
+			<Abstract type="html">    video refresh frame count per second</Abstract>
+			<DeclaredIn>KSYQosInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float videoRefreshFPS</Declaration>
+			
+			
+			<Anchor>//api/name/videoRefreshFPS</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYQosInfo/videoRefreshFPS</TokenIdentifier>
+			<Abstract type="html">    video refresh frame count per second</Abstract>
+			<DeclaredIn>KSYQosInfo.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float videoRefreshFPS</Declaration>
+			
+			
+			<Anchor>//api/name/videoRefreshFPS</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
         
         
 	</File>
