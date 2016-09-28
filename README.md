@@ -27,6 +27,29 @@ KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用�
 | 视频编码格式 | H264, H265, MPEG4, MJPEG, JPEG2000, GIF | H263, H264, H265, MPEG2, MPEG4, MJPEG, VC-1, WMV, RV40, PNG, JPEG, YUV, WEBP, TIFF|
 | 音频编码格式 | AAC, MP3, NELLYMOSER |AAC, MP3, AMR, APE, DTS, FLAC, PCM, OGG, WMA, COOK, NELLYMOSER|
 
+### 功能特性
+- [x] 支持RTMP、HTTP、HLS的直播/点播流媒体播放
+- [x] 支持VideoToolBox硬件解码
+- [x] 支持首屏秒开
+- [x] 支持直播累计延迟优化
+- [x] 支持IPV6
+- [x] 支持H265播放
+- [x] 点播库支持全媒体格式
+- [x] 支持纯音频播放
+- [x] 支持[后台音频播放](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/background)
+- [x] 支持[使用一个对象进行多次播放](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/oneInstance)
+- [x] 支持[播放重连功能](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/reload)
+- [x] 支持多种[画面缩放模式](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/contentMode)
+- [x] 支持[画面旋转(0度, 90度, 180度, 270度)](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/rotate)
+- [x] 支持[音量调节功能](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/volume)
+- [x] 支持[静音和画面隐藏](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/muteAndHidePicture)
+- [x] 支持[播放过程中截图](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/shotScreen)
+- [x] 支持[获取原始音视频数据](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/rawData)
+- [x] 支持[点播循环播放](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/loop)
+- [x] 支持[点播续播功能](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/continuedPlayOnDemand)
+- [x] 支持[音视频文件格式探测](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/prober)
+- [x] 支持[获取文件缩略图](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/prober)
+
 ### 文档说明
 
 [详情请见wiki](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki)
