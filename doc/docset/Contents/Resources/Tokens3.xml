@@ -290,7 +290,7 @@
 			<Parameters>
 				<Parameter>
 					<Name>seekTime</Name>
-					<Abstract type="html">指定的时间位置，单位为s</Abstract>
+					<Abstract type="html">指定的时间位置，单位为s, 小于0时无法截图</Abstract>
 				</Parameter><Parameter>
 					<Name>width</Name>
 					<Abstract type="html">缩略图的宽度</Abstract>
