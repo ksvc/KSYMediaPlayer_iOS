@@ -75,7 +75,7 @@ $ git clone https://github.com/ksvc/KSYMediaPlayer_iOS.git --depth 1
 如果获取到zip格式的压缩包，解压缩后包含demo、doc、framework、README.md四个部分, 目录结构如下所示:  
 
 * domo/ 目录存放KSYPlayerDemo，双击打开KSYPlayerDemo.xcodeproj即可使用iOS示例工程，用于帮助开发都快速了解如何使用SDK。  
-* doc/ 目录存放接口参考文档，双击打开html/index.html即可看到相关appledoc风格的接口说明，也可以查看[在线版](http://ksvc.github.io/KSYMediaPlayer_iOS/html/index.html)。 
+* doc/ 目录存放接口参考文档，双击打开html/index.html即可看到相关appledoc风格的接口说明，也可以查看[在线版](http://ksvc.github.io/KSYMediaPlayer_iOS/doc/html/index.html)。 
 * framework/ 目录存放了KSYMediaPlayer.framework，该库支持armv7/arm64/x86_64和i386四种体系结构。 
 * README.md 即本文档。
 
