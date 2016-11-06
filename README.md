@@ -93,18 +93,16 @@ $ git clone https://git.oschina.net/ksvc/KSYMediaPlayer_iOS.git --depth 1
 #### 4.3.1 pod私有库下载
 通过Cocoapods能将静态库framework下载到本地，只需要将如下语句加入你的Podfile:
 
-   <pre>
+```
    pod 'KSYMediaPlayer_iOS', :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git'
-   </pre>
-   
+```
 执行pod install或者pod update后，将SDK加入工程。  
 #### 4.3.1 pod官方库下载
 配置Podfile:
 
-<pre>
+```
    pod 'KSYMediaPlayer_iOS'
-</pre>
-
+```
 ## 5. 快速集成
 [快速集成](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/快速集成)中提供了集成金山云播放SDK的基本方法。
 具体可以参考demo工程中的相应文件。
