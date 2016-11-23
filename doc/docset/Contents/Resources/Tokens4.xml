@@ -1505,6 +1505,26 @@
             <NodeRef refid="4"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/seekTo:accurate:</TokenIdentifier>
+			<Abstract type="html">跳转到指定位置播放</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>- (void)seekTo:(double)pos accurate:(BOOL)isAccurate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">跳转到的位置，单位秒</Abstract>
+				</Parameter><Parameter>
+					<Name>isAccurate</Name>
+					<Abstract type="html">是否精确跳转，NO时等同于currentPlaybackTime, YES时为精确跳转</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/seekTo:accurate:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
         
         
 	</File>

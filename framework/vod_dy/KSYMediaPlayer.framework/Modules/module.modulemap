@@ -1,0 +1,6 @@
+framework module KSYMediaPlayer {
+  umbrella header "KSYMediaPlayer.h"
+
+  export *
+  module * { export * }
+}
