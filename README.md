@@ -31,7 +31,7 @@ KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用�
 
 直播静态库位于：[framework/live](framework/live)  
 直播动态库位于：[framework/live_dy](framework/live_dy)  
-点播静态库位于：[framework/vod](framework/vod) ,vod库包括live库所有功能。
+点播静态库位于：[framework/vod](framework/vod) ,vod库包括live库所有功能。  
 点播动态库位于：[framework/vod_dy](framework/vod_dy) ,vod库包括live库所有功能。
 
 ### 功能列表
