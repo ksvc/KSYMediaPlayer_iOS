@@ -119,7 +119,7 @@ $ git clone https://git.oschina.net/ksvc/KSYMediaPlayer_iOS.git --depth 1
 
 ## 7. 详细介绍
 关于集成本SDK更详细的介绍请参考：[https://github.com/ksvc/KSYMediaPlayer_iOS/wiki](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki)  
-主要接口说明请参考：[http://ksvc.github.io/KSYMediaPlayer_iOS/html/index.html](http://ksvc.github.io/KSYMediaPlayer_iOS/doc/html/index.html)
+主要接口说明请参考：[http://ksvc.github.io/KSYMediaPlayer_iOS/doc/html/index.html](http://ksvc.github.io/KSYMediaPlayer_iOS/doc/html/index.html)
 
 ## 8. 反馈与建议
 - 主页：[金山云](http://www.ksyun.com/)
