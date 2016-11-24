@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#if USING_DYNAMIC_FRAMEWORK
-#import <KSYMediaPlayerDy/KSYMediaPlayerDy.h>
-#else
 #import <KSYMediaPlayer/KSYMediaPlayer.h>
-#endif
 
 @interface MonkeyTestViewController : UIViewController
 

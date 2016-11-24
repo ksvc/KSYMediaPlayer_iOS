@@ -10,11 +10,8 @@
 #define KSYProberVC_h
 
 #import <UIKit/UIKit.h>
-#if USING_DYNAMIC_FRAMEWORK
-#import <KSYMediaPlayerDy/KSYMediaInfoProber.h>
-#else
 #import <KSYMediaPlayer/KSYMediaInfoProber.h>
-#endif
+
 
 @interface KSYProberVC : UIViewController
 - (instancetype)initWithURL:(NSURL *)url;
