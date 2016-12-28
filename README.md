@@ -110,7 +110,7 @@ $ git clone https://git.oschina.net/ksvc/KSYMediaPlayer_iOS.git --depth 1
    pod 'KSYMediaPlayer_iOS'
 ```
 ## 5. 快速集成
-[快速集成](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/快速集成)中提供了集成金山云播放SDK的基本方法。
+[快速集成](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/rapidIntegration)中提供了集成金山云播放SDK的基本方法。
 具体可以参考demo工程中的相应文件。
 
 ## 6. 注意事项
