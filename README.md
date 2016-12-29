@@ -1,5 +1,9 @@
 # 金山云KSYMediaPlayer iOS SDK使用手册
 
+[![CocoaPods version](https://img.shields.io/cocoapods/v/KSYMediaPlayer_iOS.svg)](https://cocoapods.org/pods/KSYMediaPlayer_iOS)
+[![CocoaPods platform](https://img.shields.io/cocoapods/p/KSYMediaPlayer_iOS.svg)](https://cocoapods.org/pods/KSYMediaPlayer_iOS)
+[![CocoaPods doc](https://img.shields.io/cocoapods/metrics/doc-percent/KSYMediaPlayer_iOS.svg)](http://cocoadocs.org/docsets/KSYMediaPlayer_iOS/)
+
 ## 阅读对象  
 本文档面向所有使用该SDK的开发人员, 测试人员等, 要求读者具有一定的iOS编程开发经验。
 
