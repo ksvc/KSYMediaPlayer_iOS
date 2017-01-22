@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import "KSYPlayerVC.h"
 #import "KSYProberVC.h"
+#import "KSYNetTrackerVC.h"
 #import "MonkeyTestViewController.h"
 
 @interface ViewController ()
@@ -15,6 +16,7 @@
 @property KSYPlayerVC * playerVC;
 @property KSYProberVC * proberVC;
 @property MonkeyTestViewController * monkeyTestVC;
+@property KSYNetTrackerVC * netTrackerVC;
 @property NSURL * url;
 @end
 
@@ -22,6 +24,7 @@
     UIButton *btnPlay;
     UIButton *btnProbe;
     UIButton *btnNote;
+    UIButton *btnNet;
 }
 
 - (void)viewDidLoad {
@@ -54,8 +57,14 @@
     [btnNote addTarget:self action:@selector(onNote:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnNote];
     
+    btnNet = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btnNet setTitle:@"网络探测" forState: UIControlStateNormal];
+    btnNet.backgroundColor = [UIColor lightGrayColor];
+    [btnNet addTarget:self action:@selector(onNet:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnNet];
+    
    _url = [NSURL URLWithString:@"http://maichang.kssws.ks-cdn.com/upload20150716161913.mp4"];
-//   _url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
+   _url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
   // _url = [NSURL URLWithString:@"http://test.live.ksyun.com/live/sxm.flv"];
    //_url = [NSURL URLWithString:@"http://120.132.75.127/vod/mov/shilei_hw_rotate_error.mov"];
     //_url = [NSURL URLWithString:@"http://cxy.kss.ksyun.com/h265_56c1f0717c63f102.mp4"];
@@ -65,6 +74,8 @@
     _proberVC  =  [[KSYProberVC alloc] initWithURL:_url];
     
     _monkeyTestVC = [[MonkeyTestViewController alloc] init];
+    
+    _netTrackerVC = [[KSYNetTrackerVC alloc] init];
     
     [self layoutUI];
     
@@ -76,16 +87,20 @@
     
     CGFloat btnWdt = wdt * 0.6;
     CGFloat btnHgt = 40;
+    CGFloat yGap = 40;
     
     CGFloat xPos = (wdt - btnWdt) / 2;
-    CGFloat yPos = (hgt - btnHgt*3) / 2 - btnHgt;
+    CGFloat yPos = hgt / 4;
     btnPlay.frame = CGRectMake( xPos, yPos, btnWdt, btnHgt);
 
-    yPos = (hgt - btnHgt*3) / 2  + btnHgt;
+    yPos += (btnHgt + yGap);
     btnProbe.frame = CGRectMake( xPos, yPos, btnWdt, btnHgt);
     
-    yPos = (hgt - btnHgt*3) / 2  + btnHgt * 3;
+    yPos += (btnHgt + yGap);
     btnNote.frame = CGRectMake( xPos, yPos, btnWdt, btnHgt);
+    
+    yPos += (btnHgt + yGap);
+    btnNet.frame = CGRectMake( xPos, yPos, btnWdt, btnHgt);
 }
 
 - (IBAction)onPlayer:(id)sender {
@@ -97,9 +112,11 @@
 }
 
 - (IBAction)onNote:(id)sender {
-    [self presentViewController:_monkeyTestVC
-                       animated:YES
-                     completion:nil];
+    [self presentViewController:_monkeyTestVC animated:YES completion:nil];
+}
+
+- (IBAction)onNet:(id)sender {
+    [self presentViewController:_netTrackerVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
