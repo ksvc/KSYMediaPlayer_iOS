@@ -52,7 +52,7 @@ KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用�
 - [x] 支持[后台音频播放](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/background)
 - [x] 支持[使用一个对象进行多次播放](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/oneInstance)
 - [x] 支持[播放重连功能](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/reload)
-- [x] 支持多种[画面缩放模式](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/contentMode)
+- [x] 支持多种[画面填充模式](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/contentMode)
 - [x] 支持[画面旋转(0度, 90度, 180度, 270度)](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/rotate)
 - [x] 支持[画面镜像](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/mirror)
 - [x] 支持[音量调节功能](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/volume),支持音量放大
