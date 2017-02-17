@@ -393,7 +393,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setShouldEnableKSYStatModule:</TokenIdentifier>
-			<Abstract type="html">收集日志的状态，默认开启</Abstract>
+			<Abstract type="html">数据统计，默认开启</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL shouldEnableKSYStatModule</Declaration>
@@ -405,7 +405,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/shouldEnableKSYStatModule</TokenIdentifier>
-			<Abstract type="html">收集日志的状态，默认开启</Abstract>
+			<Abstract type="html">数据统计，默认开启</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL shouldEnableKSYStatModule</Declaration>
@@ -417,7 +417,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/shouldEnableKSYStatModule</TokenIdentifier>
-			<Abstract type="html">收集日志的状态，默认开启</Abstract>
+			<Abstract type="html">数据统计，默认开启</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, assign) BOOL shouldEnableKSYStatModule</Declaration>
@@ -532,6 +532,42 @@
 			
 			
 			<Anchor>//api/name/bufferTimeMax</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setBufferSizeMax:</TokenIdentifier>
+			<Abstract type="html">bufferSizeMax指定点播播放时的最大缓冲，单位MB</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger bufferSizeMax</Declaration>
+			
+			
+			<Anchor>//api/name/bufferSizeMax</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/bufferSizeMax</TokenIdentifier>
+			<Abstract type="html">bufferSizeMax指定点播播放时的最大缓冲，单位MB</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger bufferSizeMax</Declaration>
+			
+			
+			<Anchor>//api/name/bufferSizeMax</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/bufferSizeMax</TokenIdentifier>
+			<Abstract type="html">bufferSizeMax指定点播播放时的最大缓冲，单位MB</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property NSUInteger bufferSizeMax</Declaration>
+			
+			
+			<Anchor>//api/name/bufferSizeMax</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

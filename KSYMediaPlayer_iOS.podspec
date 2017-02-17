@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'KSYMediaPlayer_iOS'
-  spec.version      = '1.9.5'
+  spec.version      = '2.0.0.1'
   spec.license      = {
 :type => 'Proprietary',
 :text => <<-LICENSE
