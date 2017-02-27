@@ -134,3 +134,5 @@ $ git clone https://git.oschina.net/ksvc/KSYMediaPlayer_iOS.git --depth 1
 - 邮箱：<zengfanping@kingsoft.com>
 - QQ讨论群：574179720
 - Issues:https://github.com/ksvc/KSYMediaPlayer_iOS/issues
+
+<a href="http://www.ksyun.com/"><img src="http://www.ksyun.com/assets/img/static/logo.png" border="0" alt="金山云计算" /></a>
