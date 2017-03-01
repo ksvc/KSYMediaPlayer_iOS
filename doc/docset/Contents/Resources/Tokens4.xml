@@ -501,7 +501,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setBufferTimeMax:</TokenIdentifier>
-			<Abstract type="html">bufferTimeMax指定直播流播放时的最大缓冲时长，单位为秒。</Abstract>
+			<Abstract type="html">bufferTimeMax指定播放时的缓冲时长，单位秒</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property NSTimeInterval bufferTimeMax</Declaration>
@@ -513,7 +513,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/bufferTimeMax</TokenIdentifier>
-			<Abstract type="html">bufferTimeMax指定直播流播放时的最大缓冲时长，单位为秒。</Abstract>
+			<Abstract type="html">bufferTimeMax指定播放时的缓冲时长，单位秒</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property NSTimeInterval bufferTimeMax</Declaration>
@@ -525,7 +525,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/bufferTimeMax</TokenIdentifier>
-			<Abstract type="html">bufferTimeMax指定直播流播放时的最大缓冲时长，单位为秒。</Abstract>
+			<Abstract type="html">bufferTimeMax指定播放时的缓冲时长，单位秒</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property NSTimeInterval bufferTimeMax</Declaration>
