@@ -66,7 +66,8 @@ LICENSE和版本信息：[LICENSE](https://github.com/ksvc/KSYMediaPlayer_iOS/wi
 - [x] 支持[点播续播功能](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/continuedPlayOnDemand)
 - [x] 支持[音视频文件格式探测](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/prober)
 - [x] 支持[获取文件缩略图](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/prober)
-- [x] 支持多实例播放
+- [x] 支持多实例播放(同时播放多路流)
+- [x] 支持rtsp播放(TCP UDP都支持)
 
 ## 3. 运行环境
 KSYMediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及以上版本; 支持 armv7/arm64以及虚拟机运行。
