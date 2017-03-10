@@ -29,7 +29,7 @@ LICENSE和版本信息：[LICENSE](https://github.com/ksvc/KSYMediaPlayer_iOS/wi
 * 2M大小的超轻量级直播sdk；
 * 提供了支持直播和点播两个静态库，相比直播，点播支持了更丰富的封装格式和音视频编解码格式，二者支持的具体功能如下：
 
-|  | 直播 | 点播 |
+|  | 直播 | 点播(完整包含直播所有功能) |
 | ------------ | ------------- | ------------ |
 | 流协议 	| HLS, RTMP, HTTP, FILE, HTTPS, RTSP | HLS, RTMP, HTTP, FILE, RTSP, HTTPS|
 | 封装格式 	| FLV, TS, MPEG, MOV, M4V, MP3| FLV, TS, MPEG, MOV, M4V, MP3, GIF, AVI, ASF, MKV, WAV, WEBM, RM|
