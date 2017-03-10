@@ -14,6 +14,16 @@ KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用�
 ### 1.1 版本信息
 LICENSE和版本信息：[LICENSE](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/license)
 
+### 1.2 关于热更新
+
+金山云SDK保证，提供的[KSYMediaPlayer iOS播放SDK](https://github.com/ksvc/KSYMediaPlayer_iOS)未使用热更新技术，例如：RN(ReactNative)、weex、JSPatch等，请放心使用。
+
+### 1.3 关于费用
+金山云SDK保证，提供的[KSYMediaPlayer iOS播放SDK](https://github.com/ksvc/KSYMediaPlayer_iOS)可以用于商业应用，不会收取任何SDK使用费用。但是基于[KSYMediaPlayer iOS播放SDK](https://github.com/ksvc/KSYMediaPlayer_iOS)的其他商业服务，会由特定供应商收取授权费用，大致包括：
+
+1. 云存储
+1. CDN分发
+
 ## 2. KSYMediaPlayer SDK 功能说明
 
 ### 功能特性
