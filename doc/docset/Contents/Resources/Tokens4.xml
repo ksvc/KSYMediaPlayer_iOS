@@ -1501,6 +1501,78 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setNetworkDetectURL:</TokenIdentifier>
+			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.kingsoft.com”</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) NSString *networkDetectURL</Declaration>
+			
+			
+			<Anchor>//api/name/networkDetectURL</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/networkDetectURL</TokenIdentifier>
+			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.kingsoft.com”</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) NSString *networkDetectURL</Declaration>
+			
+			
+			<Anchor>//api/name/networkDetectURL</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/networkDetectURL</TokenIdentifier>
+			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.kingsoft.com”</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) NSString *networkDetectURL</Declaration>
+			
+			
+			<Anchor>//api/name/networkDetectURL</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setNetworkStatus:</TokenIdentifier>
+			<Abstract type="html">网络连通状态</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) KSYNetworkStatus networkStatus</Declaration>
+			
+			
+			<Anchor>//api/name/networkStatus</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/networkStatus</TokenIdentifier>
+			<Abstract type="html">网络连通状态</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) KSYNetworkStatus networkStatus</Declaration>
+			
+			
+			<Anchor>//api/name/networkStatus</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/networkStatus</TokenIdentifier>
+			<Abstract type="html">网络连通状态</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) KSYNetworkStatus networkStatus</Declaration>
+			
+			
+			<Anchor>//api/name/networkStatus</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setTimeout:readTimeout:</TokenIdentifier>
 			<Abstract type="html">timeout指定拉流超时时间,单位是秒</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
