@@ -24,7 +24,7 @@ KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用�
 
 |  | 直播 | 点播 |
 | ------------ | ------------- | ------------ |
-| 流协议 	| HLS, RTMP, HTTP, FILE | HLS, RTMP, HTTP, FILE, RTSP |
+| 流协议 	| HLS, RTMP, HTTP, FILE | HLS, RTMP, HTTP, FILE, RTSP, HTTPS|
 | 封装格式 	| FLV, TS, MPEG, MOV, M4V, MP3, GIF | FLV, TS, MPEG, MOV, M4V, MP3, GIF, AVI, ASF, MKV, WAV, WEBM, RM|
 | 视频编码格式 | H264, H265, MPEG4, MJPEG, JPEG2000, GIF | H263, H264, H265, MPEG2, MPEG4, MJPEG, VC-1, WMV, RV40, PNG, JPEG, YUV, WEBP, TIFF|
 | 音频编码格式 | AAC, MP3, NELLYMOSER |AAC, MP3, AMR, APE, DTS, FLAC, PCM, OGG, WMA, COOK, NELLYMOSER|
