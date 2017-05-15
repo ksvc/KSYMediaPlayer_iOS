@@ -96,7 +96,7 @@ KSYMediaPlayer iOS SDK可运行于 iPhone/iPod Touch/iPad，支持 iOS 7.0 及�
 本SDK提供如下两种获取方式：  
 
 * 从github下载；
-* 从oschina下载；
+* 从bitbucket下载；
 * 使用Cocoapods安装;
 
 更新日志查看地址：[https://github.com/ksvc/KSYMediaPlayer_iOS/releases](https://github.com/ksvc/KSYMediaPlayer_iOS/releases);
@@ -114,13 +114,13 @@ $ git clone https://github.com/ksvc/KSYMediaPlayer_iOS.git --depth 1
 * framework/ 目录存放了KSYMediaPlayer.framework，该库支持armv7/arm64/x86_64和i386四种体系结构。 
 * README.md 即本文档。
 
-### 4.2 oschina下载
-* 从oschina下载：[http://git.oschina.net/ksvc/KSYMediaPlayer_iOS](http://git.oschina.net/ksvc/KSYMediaPlayer_iOS)
+### 4.2 bitbucket下载
+* 从bitbucket下载：[https://bitbucket.org/ksvc/ksymediaplayer_ios](https://bitbucket.org/ksvc/ksymediaplayer_ios)
 
-对于部分地方访问github比较慢的情况，可以从oschina clone，获取的库内容和github一致。
+对于部分地方访问github比较慢的情况，可以从bitbucket下载，获取的库内容和github一致。
 
 ```
-$ git clone https://git.oschina.net/ksvc/KSYMediaPlayer_iOS.git --depth 1
+$ git clone https://bitbucket.org/ksvc/ksymediaplayer_ios.git --depth 1
 ```
 
 ### 4.3 Cocoapods安装
