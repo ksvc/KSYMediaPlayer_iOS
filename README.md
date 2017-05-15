@@ -7,6 +7,12 @@
 ## 阅读对象  
 本文档面向所有使用该SDK的开发人员, 测试人员等, 要求读者具有一定的iOS编程开发经验。
 
+[金山云播放SDK][libksyplayer]提供了iOS平台直播播放、点播播放能力，**不限制**用户的拉流地址。用户可以只使用金山云直播SDK而不使用金山云的云服务。
+
+[金山云播放SDK][libksyplayer]不收取任何授权使用费用，不含任何失效时间或者远程下发关闭的后门。同时[金山云播放SDK][libksyplayer]也不要求ak/sk等鉴权，没有任何用户标识信息。
+
+[金山云播放SDK][libksyplayer]提供了业内一流的H.265解码能力，免费使用，欢迎试用评估。
+
 ## 1. 概述  
 金山云播放内核涵盖Android、iOS、Flash和浏览器插件四个平台，基于FFmpeg自主研发音视频媒体播放内核，作为一款全平台兼容的软件播放方案，金山云播放内核提供了跨终端平台的播放器SDK，以及开放的音视频播放、控制接口和完整的开源调用示例，不仅极大降低开发门槛，同时支持客户快速在多个平台发布产品。  
 KSYMediaPlayer iOS SDK是金山云播放内核官方推出的iOS平台上使用的软件开发工具包(SDK)，为iOS开发者提供简单、快捷的接口，帮助开发者实现iOS平台上的多媒体播放应用。
@@ -16,10 +22,10 @@ LICENSE和版本信息：[LICENSE](https://github.com/ksvc/KSYMediaPlayer_iOS/wi
 
 ### 1.2 关于热更新
 
-金山云SDK保证，提供的[KSYMediaPlayer iOS播放SDK](https://github.com/ksvc/KSYMediaPlayer_iOS)未使用热更新技术，例如：RN(ReactNative)、weex、JSPatch等，请放心使用。
+金山云SDK保证，提供的[KSYMediaPlayer iOS播放SDK][libksyplayer]未使用热更新技术，例如：RN(ReactNative)、weex、JSPatch等，请放心使用。
 
 ### 1.3 关于费用
-金山云SDK保证，提供的[KSYMediaPlayer iOS播放SDK](https://github.com/ksvc/KSYMediaPlayer_iOS)可以用于商业应用，不会收取任何SDK使用费用。但是基于[KSYMediaPlayer iOS播放SDK](https://github.com/ksvc/KSYMediaPlayer_iOS)的其他商业服务，会由特定供应商收取授权费用，大致包括：
+金山云SDK保证，提供的[KSYMediaPlayer iOS播放SDK][libksyplayer]可以用于商业应用，不会收取任何SDK使用费用。但是基于[KSYMediaPlayer iOS播放SDK](https://github.com/ksvc/KSYMediaPlayer_iOS)的其他商业服务，会由特定供应商收取授权费用，大致包括：
 
 1. 云存储
 1. CDN分发
@@ -149,3 +155,5 @@ $ git clone https://git.oschina.net/ksvc/KSYMediaPlayer_iOS.git --depth 1
 - Issues:https://github.com/ksvc/KSYMediaPlayer_iOS/issues
 
 <a href="http://www.ksyun.com/"><img src="https://raw.githubusercontent.com/wiki/ksvc/KSYLive_Android/images/logo.png" border="0" alt="金山云计算" /></a>
+
+[libksyplayer]:https://github.com/ksvc/KSYMediaPlayer_iOS
