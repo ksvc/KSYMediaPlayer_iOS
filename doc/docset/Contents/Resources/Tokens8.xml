@@ -17,7 +17,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkReachable reachableBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkReachable reachableBlock</Declaration>
 			
 			
 			<Anchor>//api/name/reachableBlock</Anchor>
@@ -29,7 +29,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkReachable reachableBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkReachable reachableBlock</Declaration>
 			
 			
 			<Anchor>//api/name/reachableBlock</Anchor>
@@ -41,7 +41,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkReachable reachableBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkReachable reachableBlock</Declaration>
 			
 			
 			<Anchor>//api/name/reachableBlock</Anchor>
@@ -53,7 +53,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkUnreachable unreachableBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkUnreachable unreachableBlock</Declaration>
 			
 			
 			<Anchor>//api/name/unreachableBlock</Anchor>
@@ -65,7 +65,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkUnreachable unreachableBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkUnreachable unreachableBlock</Declaration>
 			
 			
 			<Anchor>//api/name/unreachableBlock</Anchor>
@@ -77,7 +77,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkUnreachable unreachableBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkUnreachable unreachableBlock</Declaration>
 			
 			
 			<Anchor>//api/name/unreachableBlock</Anchor>
@@ -89,7 +89,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkReachability reachabilityBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkReachability reachabilityBlock</Declaration>
 			
 			
 			<Anchor>//api/name/reachabilityBlock</Anchor>
@@ -101,7 +101,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkReachability reachabilityBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkReachability reachabilityBlock</Declaration>
 			
 			
 			<Anchor>//api/name/reachabilityBlock</Anchor>
@@ -113,7 +113,7 @@
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>KSYReachability.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NetworkReachability reachabilityBlock</Declaration>
+			<Declaration>@property (nonatomic, copy) KSYNetworkReachability reachabilityBlock</Declaration>
 			
 			
 			<Anchor>//api/name/reachabilityBlock</Anchor>

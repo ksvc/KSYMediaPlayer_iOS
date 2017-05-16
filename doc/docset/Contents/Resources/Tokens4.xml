@@ -523,6 +523,42 @@
 		</Token>
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setNaturalRotate:</TokenIdentifier>
+			<Abstract type="html">当前视频自带旋转（逆时针）角度</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger naturalRotate</Declaration>
+			
+			
+			<Anchor>//api/name/naturalRotate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/naturalRotate</TokenIdentifier>
+			<Abstract type="html">当前视频自带旋转（逆时针）角度</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger naturalRotate</Declaration>
+			
+			
+			<Anchor>//api/name/naturalRotate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/naturalRotate</TokenIdentifier>
+			<Abstract type="html">当前视频自带旋转（逆时针）角度</Abstract>
+			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger naturalRotate</Declaration>
+			
+			
+			<Anchor>//api/name/naturalRotate</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setLogBlock:</TokenIdentifier>
 			<Abstract type="html">获取播放器日志</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
@@ -1502,7 +1538,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/setNetworkDetectURL:</TokenIdentifier>
-			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.kingsoft.com”</Abstract>
+			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.baidu.com”</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite) NSString *networkDetectURL</Declaration>
@@ -1514,7 +1550,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/KSYMoviePlayerController/networkDetectURL</TokenIdentifier>
-			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.kingsoft.com”</Abstract>
+			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.baidu.com”</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite) NSString *networkDetectURL</Declaration>
@@ -1526,7 +1562,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instp/KSYMoviePlayerController/networkDetectURL</TokenIdentifier>
-			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.kingsoft.com”</Abstract>
+			<Abstract type="html">用于检测网络连通性的地址，默认使用地址为“www.baidu.com”</Abstract>
 			<DeclaredIn>KSYMoviePlayerController.h</DeclaredIn>
 			
 			<Declaration>@property (nonatomic, readwrite) NSString *networkDetectURL</Declaration>
