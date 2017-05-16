@@ -9,22 +9,26 @@
 #import "KSYPlayerVC.h"
 #import "KSYProberVC.h"
 #import "KSYNetTrackerVC.h"
-#import "MonkeyTestViewController.h"
+#import "KSYMonkeyTestVC.h"
+
+#import "KSYPlayerCfgVC.h"
 
 @interface ViewController ()
 
+//配置控制器
+@property KSYPlayerCfgVC *playerCfgVC;
 @property KSYPlayerVC * playerVC;
-@property KSYProberVC * proberVC;
-@property MonkeyTestViewController * monkeyTestVC;
-@property KSYNetTrackerVC * netTrackerVC;
+@property KSYProberVC * proberVC;//格式探测
+@property KSYMonkeyTestVC * monkeyTestVC;
+@property KSYNetTrackerVC * netTrackerVC;//跟踪器
 @property NSURL * url;
 @end
 
 @implementation ViewController{
-    UIButton *btnPlay;
-    UIButton *btnProbe;
+    UIButton *btnPlay;//播放
+    UIButton *btnProbe;//探测格式
     UIButton *btnNote;
-    UIButton *btnNet;
+    UIButton *btnNet;//网络探测
 }
 
 - (void)viewDidLoad {
@@ -63,22 +67,10 @@
     [btnNet addTarget:self action:@selector(onNet:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnNet];
     
-   _url = [NSURL URLWithString:@"http://maichang.kssws.ks-cdn.com/upload20150716161913.mp4"];
    _url = [NSURL URLWithString:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
-  // _url = [NSURL URLWithString:@"http://test.live.ksyun.com/live/sxm.flv"];
-   //_url = [NSURL URLWithString:@"http://120.132.75.127/vod/mov/shilei_hw_rotate_error.mov"];
-    //_url = [NSURL URLWithString:@"http://cxy.kss.ksyun.com/h265_56c1f0717c63f102.mp4"];
-   //_url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%s", NSHomeDirectory(), "/Documents/shilei_hw_rotate_error.mov"]];
-    
-    _playerVC   = [[KSYPlayerVC alloc] initWithURL:_url];
-    _proberVC  =  [[KSYProberVC alloc] initWithURL:_url];
-    
-    _monkeyTestVC = [[MonkeyTestViewController alloc] init];
-    
-    _netTrackerVC = [[KSYNetTrackerVC alloc] init];
-    
+   //_url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%s", NSHomeDirectory(), "/Documents/IMG_0676.MOV"]];
+
     [self layoutUI];
-    
 }
 
 - (void) layoutUI {
@@ -103,19 +95,23 @@
     btnNet.frame = CGRectMake( xPos, yPos, btnWdt, btnHgt);
 }
 
-- (IBAction)onPlayer:(id)sender {
-    [self presentViewController:_playerVC animated:true completion:nil];
+- (IBAction)onPlayer:(id)sender {//先弹出配置控制器
+    _playerCfgVC = [[KSYPlayerCfgVC alloc] initWithURL:_url fileList:nil];
+    [self presentViewController:_playerCfgVC animated:true completion:nil];
 }
 
 - (IBAction)onProber:(id)sender {
+    _proberVC  =  [[KSYProberVC alloc] initWithURL:_url];
     [self presentViewController:_proberVC animated:true completion:nil];
 }
 
 - (IBAction)onNote:(id)sender {
+    _monkeyTestVC = [[KSYMonkeyTestVC alloc] init];
     [self presentViewController:_monkeyTestVC animated:YES completion:nil];
 }
 
 - (IBAction)onNet:(id)sender {
+    _netTrackerVC = [[KSYNetTrackerVC alloc] init];
     [self presentViewController:_netTrackerVC animated:YES completion:nil];
 }
 

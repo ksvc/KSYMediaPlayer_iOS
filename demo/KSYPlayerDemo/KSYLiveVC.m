@@ -9,8 +9,12 @@
 #import "KSYLiveVC.h"
 #import "QRViewController.h"
 #import "KSYPlayerVC.h"
+#import "KSYProberVC.h"
+#import "KSYMonkeyTestVC.h"
+#import "KSYNetTrackerVC.h"
 #import "KSYSQLite.h"
 #import "KSYDBCreater.h"
+
 @interface KSYLiveVC ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>{
     UITextField     *_textFiled;
     UIButton        *_buttonQR;
@@ -30,6 +34,10 @@
     [super viewDidLoad];
     self.title = @"KSYDEMO";
     self.view.backgroundColor = [UIColor whiteColor];
+    _addressMulArray = [[NSMutableArray alloc] init];
+    //要播放的地址请通过addObject添加在这里
+    [_addressMulArray addObject:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
+    [_addressMulArray addObject:@"IMG_0000.MOV"];
     [self initVariable];
     [self initLiveVCUI];
     [KSYDBCreater initDatabase];
@@ -64,13 +72,13 @@
     return barButton;
 }
 - (void)addLeftNavigationBarButton{
-    self.navigationItem.leftBarButtonItem = [self addBarButtonItemWithTitle:@"输入完成" action:@selector(closeKeyBoard)];
+    self.navigationItem.leftBarButtonItem = [self addBarButtonItemWithTitle:@"扫描二维码" action:@selector(scanQR)];
 }
+
 - (void)addRightNavigationBarButton{
-    
-    self.navigationItem.rightBarButtonItem = [self addBarButtonItemWithTitle:@"扫描二维码" action:@selector(scanQR)];
-    
+    self.navigationItem.rightBarButtonItem = [self addBarButtonItemWithTitle:@"关闭键盘" action:@selector(closeKeyBoard)];
 }
+
 - (UITableView *)addTableView{
     UITableView *teble = [[UITableView alloc]init];
     teble.layer.masksToBounds = YES;
@@ -84,7 +92,12 @@
 - (void)initVariable{
     _width  = self.view.frame.size.width;
     _height = self.view.frame.size.height;
-    _controllers = [NSArray arrayWithObjects:@"KSYPlayerVC",nil];
+    _controllers = [NSArray arrayWithObjects:
+                    @"播放demo",
+                    @"文件格式探测",
+                    @"播放自动化测试 ",
+                    @"网络探测",
+                    nil];
 }
 
 
@@ -116,7 +129,6 @@
     [self addLeftNavigationBarButton];
     [self addRightNavigationBarButton];
     [self initFrame];
-    [self myReloadData];
 }
 
 
@@ -153,16 +165,30 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    NSString *controllerName = _controllers[indexPath.row];
-//    UIViewController *viewController = [[NSClassFromString(controllerName) alloc]init];
-//    [self presentViewController:viewController animated:YES completion:nil];
     if (tableView == _ctrTableView) {
+        NSURL *url = nil;
         if (_textFiled.text.length > 0) {
-            if (indexPath.row == 0) {
-                NSURL *url = [NSURL URLWithString:_textFiled.text];
-                KSYPlayerVC *vc = [[KSYPlayerVC alloc]initWithURL:url];
-                [self presentViewController:vc animated:YES completion:nil];
-            }
+            NSLog(@"url:%@",_textFiled.text);
+            [NSURL URLWithString:_textFiled.text];
+            url = [NSURL URLWithString:_textFiled.text];
+            NSString *scheme = [url scheme];
+            if(!scheme)
+                url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%s%@", NSHomeDirectory(), "/Documents/", _textFiled.text]];
+        }
+        UIViewController* vc = nil;
+        if (indexPath.row == 0) {
+            vc = [[KSYPlayerCfgVC alloc]initWithURL:url fileList:nil];
+        }else if (indexPath.row == 1){
+            vc = [[KSYProberVC alloc] initWithURL:url];
+        }else if(indexPath.row == 2){
+            vc = [[KSYMonkeyTestVC alloc] init];
+        }
+        else if (indexPath.row == 3){
+            vc = [[KSYNetTrackerVC alloc]init];
+        }
+        
+        if (vc){
+            [self presentViewController:vc animated:YES completion:nil];
         }
     }else if(tableView == _addressTable){
         _textFiled.text = _addressMulArray[indexPath.row];
@@ -200,16 +226,17 @@
 - (void)showAddress:(NSString *)str{
     _textFiled.text = str;
 }
+
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [_textFiled resignFirstResponder];
 }
+
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    [self myReloadData];
+    
 }
 
 - (void)myReloadData{
     NSArray *addressArray = [[KSYSQLite sharedInstance] getAddress];
-    _addressMulArray = [NSMutableArray array];
     for(NSDictionary *dic in addressArray){
         NSString *address = [dic objectForKey:@"address"];
         [_addressMulArray addObject:address];

@@ -14,7 +14,7 @@
 
 @implementation AppDelegate
 
-#define DEV_MODE 1
+#define DEV_MODE 0
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     if(!DEV_MODE){
