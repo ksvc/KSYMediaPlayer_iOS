@@ -4,8 +4,9 @@
 [![CocoaPods platform](https://img.shields.io/cocoapods/p/KSYMediaPlayer_iOS.svg)](https://cocoapods.org/pods/KSYMediaPlayer_iOS)
 [![CocoaPods doc](https://img.shields.io/cocoapods/metrics/doc-percent/KSYMediaPlayer_iOS.svg)](http://cocoadocs.org/docsets/KSYMediaPlayer_iOS/)
 
-## 阅读对象  
-本文档面向所有使用该SDK的开发人员、测试人员等, 要求读者具有一定的iOS编程开发经验。
+## 阅读对象
+本文档面向所有使用[金山云播放SDK][libksyplayer]的开发、测试人员等, 要求读者具有一定的iOS编程开发经验，并且要求读者具备阅读[wiki][wiki]的习惯。
+
 
 ## 1. 概述  
 金山云播放内核涵盖Android、iOS、Flash和浏览器插件四个平台，基于FFmpeg自主研发音视频媒体播放内核，作为一款全平台兼容的软件播放方案，金山云播放内核提供了跨终端平台的播放器SDK，以及开放的音视频播放、控制接口和完整的开源调用示例，不仅极大降低开发门槛，同时支持客户快速在多个平台发布产品。  
@@ -159,3 +160,4 @@ $ git clone https://bitbucket.org/ksvc/ksymediaplayer_ios.git --depth 1
 
 [libksyplayer]:https://github.com/ksvc/KSYMediaPlayer_iOS
 [ksyun]:https://www.ksyun.com/about/aboutcontact
+[wiki]:https://github.com/ksvc/KSYMediaPlayer_iOS/wiki
