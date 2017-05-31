@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		581D3A7F1DE68CDA00051F63 /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */; };
+		582096031EDED32600C38D0F /* KSYAVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 582096021EDED32600C38D0F /* KSYAVWriter.m */; };
 		588141EB1ECB0F2F0022A360 /* KSYFloatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 588141DC1ECB0F2E0022A360 /* KSYFloatVC.m */; };
 		588141EC1ECB0F2F0022A360 /* KSYMonkeyTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 588141DE1ECB0F2F0022A360 /* KSYMonkeyTestVC.m */; };
 		588141ED1ECB0F2F0022A360 /* KSYNetTrackerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 588141E01ECB0F2F0022A360 /* KSYNetTrackerVC.m */; };
@@ -54,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
+		582096011EDED32600C38D0F /* KSYAVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYAVWriter.h; sourceTree = "<group>"; };
+		582096021EDED32600C38D0F /* KSYAVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYAVWriter.m; sourceTree = "<group>"; };
 		588141DB1ECB0F2E0022A360 /* KSYFloatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYFloatVC.h; sourceTree = "<group>"; };
 		588141DC1ECB0F2E0022A360 /* KSYFloatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYFloatVC.m; sourceTree = "<group>"; };
 		588141DD1ECB0F2E0022A360 /* KSYMonkeyTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYMonkeyTestVC.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 		588141DA1ECB0F2E0022A360 /* KSYPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				582096011EDED32600C38D0F /* KSYAVWriter.h */,
+				582096021EDED32600C38D0F /* KSYAVWriter.m */,
 				588141DB1ECB0F2E0022A360 /* KSYFloatVC.h */,
 				588141DC1ECB0F2E0022A360 /* KSYFloatVC.m */,
 				588141DD1ECB0F2E0022A360 /* KSYMonkeyTestVC.h */,
@@ -312,6 +317,7 @@
 				95B4A4131CC085BE00CB6804 /* KSYSQLite.m in Sources */,
 				74B9ED601C158675003149E9 /* AppDelegate.m in Sources */,
 				E328B4D81CCE087400BD31FC /* KSYDBCreater.m in Sources */,
+				582096031EDED32600C38D0F /* KSYAVWriter.m in Sources */,
 				588141FD1ECB0F690022A360 /* KSYNameSlider.m in Sources */,
 				588141FF1ECB0F690022A360 /* KSYUIView.m in Sources */,
 				588141FC1ECB0F690022A360 /* KSYFileSelector.m in Sources */,

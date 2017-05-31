@@ -37,7 +37,7 @@
     _addressMulArray = [[NSMutableArray alloc] init];
     //要播放的地址请通过addObject添加在这里
     [_addressMulArray addObject:@"rtmp://live.hkstv.hk.lxdns.com/live/hks"];
-    [_addressMulArray addObject:@"IMG_0000.MOV"];
+    [_addressMulArray addObject:@"PlayerRec.mp4"];
     [self initVariable];
     [self initLiveVCUI];
     [KSYDBCreater initDatabase];
