@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314D1B501EF8FAC80033C993 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314D1B4F1EF8FAC80033C993 /* Bugly.framework */; };
 		581D3A7F1DE68CDA00051F63 /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */; };
 		582096031EDED32600C38D0F /* KSYAVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 582096021EDED32600C38D0F /* KSYAVWriter.m */; };
 		588141EB1ECB0F2F0022A360 /* KSYFloatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 588141DC1ECB0F2E0022A360 /* KSYFloatVC.m */; };
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		314D1B4F1EF8FAC80033C993 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
 		581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
 		582096011EDED32600C38D0F /* KSYAVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYAVWriter.h; sourceTree = "<group>"; };
 		582096021EDED32600C38D0F /* KSYAVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYAVWriter.m; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				314D1B501EF8FAC80033C993 /* Bugly.framework in Frameworks */,
 				581D3A7F1DE68CDA00051F63 /* KSYMediaPlayer.framework in Frameworks */,
 				7C9220BA1C984FC9005EF1D1 /* libsqlite3.tbd in Frameworks */,
 				7C89723D1C461FBC00535BC8 /* SystemConfiguration.framework in Frameworks */,
@@ -131,6 +134,7 @@
 		581D3A7D1DE68CDA00051F63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				314D1B4F1EF8FAC80033C993 /* Bugly.framework */,
 				581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */,
 			);
 			name = Frameworks;
@@ -443,7 +447,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = ../framework/live;
+				FRAMEWORK_SEARCH_PATHS = (
+					../framework/live,
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KSYPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -466,7 +473,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
-				FRAMEWORK_SEARCH_PATHS = ../framework/live;
+				FRAMEWORK_SEARCH_PATHS = (
+					../framework/live,
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = KSYPlayerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
