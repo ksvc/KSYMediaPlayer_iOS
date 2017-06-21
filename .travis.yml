@@ -1,0 +1,19 @@
+language: objective-c
+osx_image: xcode8
+xcode_project: demo/KSYPlayerDemo.xcodeproj
+xcode_scheme: KSYPlayerDemo
+script:
+- echo "release to framework_live/vod_${TRAVIS_TAG}.zip - $TRAVIS_TAG"
+- zip -q --symlinks -r framework_live_${TRAVIS_TAG}.zip framework/live/*
+- zip -q --symlinks -r framework_vod_${TRAVIS_TAG}.zip framework/vod/*
+deploy:
+  provider: releases
+  api_key:
+    secure: RTfc9nuFrVqeyzOM+WnouwKi52JwtZbNGmRNLQhzI97IMZwYc/6o/vmzhdB8m9Qv0Pu9vW9v+h/1HYR5zsrzREDffff+7swZ8TEEcc/ZrZImIhiAemd4B35cCfLrKZBbLhR4JP/26jPR2pRqrtOMEdjb65tjvp9Y7Bgry50vxM550Oab75mK/YxD9UjFJCaSnCOZk6ypWxnICqVL1nHh3WxZ7FQ0sfDeNdSdfcjdsIe45tHtuvdx92vjxZJ9WTm34/KFON2qTusRwtFajscCB2b6FiA8JX7jRy9k41yAZZ0vt1hZXUqeOWTRBWF2Fj6+pOnSX7LKpHcCHbCPtwW8Q+H9bM+OPugqTd6pU1T9eGNesbDTXzW/75hv4eC9Ql0k6a2r71iXVrXmxQK5Xb67hte8mldIjlDebdp2BiqGWYPHeXlyUB+gIObHMzRqOa6hGReKyy9x3FPZsqqucjnXaCG2CFtCdkul/2U6FZ5jfjMD3VftSV4O8HEZPdacvO74kQZq5s6rRajOepBxt7PmaDW1IjhkYs4VBr6GLsQGtRUT3VK69JmjFxkN1T+i3pxE7/2i9BG1JnEqeUoAHb69dDqziwyLe07awGy7ZX4sjoyJQ4/FlwBboLc4mh7hG+a8LC/uqpycS8VkBG63nwX82wQb3NyL4scq7j33gF8e6Po=
+  file:
+    - framework_live_${TRAVIS_TAG}.zip
+    - framework_vod_${TRAVIS_TAG}.zip
+  skip_cleanup: true
+  on:
+    repo: ksvc/KSYMediaPlayer_iOS
+    tags: true
