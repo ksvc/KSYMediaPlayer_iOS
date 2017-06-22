@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.3.0</string>
+	<string>2.4.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>2.3.0.2</string>
+	<string>2.4.0.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -29,6 +29,10 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>YES</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>YES</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
@@ -49,9 +53,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>YES</string>
-	<key>NSCameraUsageDescription</key>
-	<string>YES</string>
 </dict>
 </plist>
