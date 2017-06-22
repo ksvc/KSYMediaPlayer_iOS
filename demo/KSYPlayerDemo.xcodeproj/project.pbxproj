@@ -10,6 +10,7 @@
 		314D1B501EF8FAC80033C993 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314D1B4F1EF8FAC80033C993 /* Bugly.framework */; };
 		581D3A7F1DE68CDA00051F63 /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */; };
 		582096031EDED32600C38D0F /* KSYAVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 582096021EDED32600C38D0F /* KSYAVWriter.m */; };
+		587CEF481EFBA7BC0018F226 /* KSYSimplePlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 587CEF471EFBA7BC0018F226 /* KSYSimplePlayVC.m */; };
 		588141EB1ECB0F2F0022A360 /* KSYFloatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 588141DC1ECB0F2E0022A360 /* KSYFloatVC.m */; };
 		588141EC1ECB0F2F0022A360 /* KSYMonkeyTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 588141DE1ECB0F2F0022A360 /* KSYMonkeyTestVC.m */; };
 		588141ED1ECB0F2F0022A360 /* KSYNetTrackerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 588141E01ECB0F2F0022A360 /* KSYNetTrackerVC.m */; };
@@ -59,6 +60,8 @@
 		581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
 		582096011EDED32600C38D0F /* KSYAVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYAVWriter.h; sourceTree = "<group>"; };
 		582096021EDED32600C38D0F /* KSYAVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYAVWriter.m; sourceTree = "<group>"; };
+		587CEF461EFBA7BC0018F226 /* KSYSimplePlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYSimplePlayVC.h; sourceTree = "<group>"; };
+		587CEF471EFBA7BC0018F226 /* KSYSimplePlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYSimplePlayVC.m; sourceTree = "<group>"; };
 		588141DB1ECB0F2E0022A360 /* KSYFloatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYFloatVC.h; sourceTree = "<group>"; };
 		588141DC1ECB0F2E0022A360 /* KSYFloatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYFloatVC.m; sourceTree = "<group>"; };
 		588141DD1ECB0F2E0022A360 /* KSYMonkeyTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYMonkeyTestVC.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 		588141DA1ECB0F2E0022A360 /* KSYPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				587CEF461EFBA7BC0018F226 /* KSYSimplePlayVC.h */,
+				587CEF471EFBA7BC0018F226 /* KSYSimplePlayVC.m */,
 				582096011EDED32600C38D0F /* KSYAVWriter.h */,
 				582096021EDED32600C38D0F /* KSYAVWriter.m */,
 				588141DB1ECB0F2E0022A360 /* KSYFloatVC.h */,
@@ -273,6 +278,7 @@
 					74B9ED571C158675003149E9 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = ZGJ54Q7R45;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -312,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587CEF481EFBA7BC0018F226 /* KSYSimplePlayVC.m in Sources */,
 				588141F11ECB0F2F0022A360 /* KSYProgressView.m in Sources */,
 				588141EE1ECB0F2F0022A360 /* KSYPlayerCfgVC.m in Sources */,
 				955FDFC61CCF3EC300B37F54 /* ViewController.m in Sources */,
