@@ -7,7 +7,7 @@
 //
 
 #import "KSYUIVC.h"
- #import <KSYMediaPlayer/KSYMoviePlayerController.h> 
+#import <KSYMediaPlayer/KSYMoviePlayerController.h>
 
 @interface KSYMonkeyTestVC : KSYUIVC
 
