@@ -1,0 +1,28 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+target 'KSYPlayerDemo' do
+  pod 'Bugly'
+
+  #以下关于KSYMediaPlayer_iOS的pod，只能打开一个，选择你需要的那个
+  #默认使用静态直播库
+  #pod 'KSYMediaPlayer_iOS',                              :path => '../'
+  
+  #使用静态直播库
+  pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_live',         :path => '../'
+  
+  #使用动态直播库
+  #pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_live_dy',      :path => '../'
+  
+  #使用静态点播库
+  #pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_vod',          :path => '../'
+  
+  #使用动态点播库
+  #pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_vod_dy',       :path => '../'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    puts "!!!! #{target.name}"
+  end
+end

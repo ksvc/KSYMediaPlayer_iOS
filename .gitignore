@@ -60,3 +60,7 @@ fastlane/screenshots
 ### Objective-C Patch ###
 *.xcscmblueprint
 *.log
+*.xcworkspace/
+Podfile.lock
+export.plist
+.DS_Store

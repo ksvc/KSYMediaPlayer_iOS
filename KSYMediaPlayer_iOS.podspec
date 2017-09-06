@@ -17,10 +17,27 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '7.0'
   spec.requires_arc = true
   spec.frameworks   = 'VideoToolbox'
-  spec.ios.library = 'z', 'iconv', 'stdc++.6'
+  spec.ios.library = 'z', 'iconv', 'stdc++.6', 'bz2'
   spec.source = {
 	  :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git', 
 	  :tag => 'v'+spec.version.to_s
   }
-  spec.vendored_frameworks = 'framework/live/KSYMediaPlayer.framework'
+ 
+  spec.default_subspec = 'KSYMediaPlayer_live'
+
+  spec.subspec 'KSYMediaPlayer_live'  do |sub| 
+    sub.vendored_frameworks = 'framework/live/KSYMediaPlayer.framework'
+  end
+  
+#   spec.subspec 'KSYMediaPlayer_live_dy'  do |sub| 
+#     sub.vendored_frameworks = 'framework/live_dy/KSYMediaPlayer.framework'
+#   end
+  
+  spec.subspec 'KSYMediaPlayer_vod'  do |sub| 
+    sub.vendored_frameworks = 'framework/vod/KSYMediaPlayer.framework'
+  end
+
+#   spec.subspec 'KSYMediaPlayer_vod_dy'  do |sub| 
+#     sub.vendored_frameworks = 'framework/vod_dy/KSYMediaPlayer.framework'
+#   end
 end
