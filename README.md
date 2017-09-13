@@ -155,6 +155,8 @@ KSYMediaPlayer_iOS默认的子模块是KSYMediaPlayer_live，也就是说Podfile
  pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_vod'
 ```
 
+**由于cocoapod的问题，目前暂不支持pod方式引用动态库**
+
 <details>
 <summary>Pod依赖进阶</summary>
 <b markdown=1>
