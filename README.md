@@ -129,19 +129,61 @@ $ git clone https://bitbucket.org/ksvc/ksymediaplayer_ios.git --depth 1
 ```
 
 ### 4.3 Cocoapods安装
-#### 4.3.1 pod私有库下载
-通过Cocoapods能将静态库framework下载到本地，只需要将如下语句加入你的Podfile:
 
-```
-   pod 'KSYMediaPlayer_iOS', :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git'
-```
-执行pod install或者pod update后，将SDK加入工程。  
-#### 4.3.1 pod官方库下载
-配置Podfile:
+通过Cocoapods能将静态库framework下载到本地，只需要将如下语句加入你的Podfile:
 
 ```
    pod 'KSYMediaPlayer_iOS'
 ```
+执行pod install或者pod update后，将SDK加入工程。 
+
+为满足不同用户的需求，本SDK提供了两个不同的子模块
+* KSYMediaPlayer_live : 用于直播的静态库
+* KSYMediaPlayer_vod : 用于点播的静态库(从2.7.0版本开始支持pod引用点播静态库)
+
+KSYMediaPlayer_iOS默认的子模块是KSYMediaPlayer_live，也就是说Podfile中直接填写
+```
+ pod 'KSYMediaPlayer_iOS'
+```
+等同于
+```
+ pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_live'
+```
+
+如果您希望通过pod方式引用点播库，那么需要在podfile这样写：
+```
+ pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_vod'
+```
+
+<details>
+<summary>Pod依赖进阶</summary>
+<b markdown=1>
+  
+* 本地开发版 (sdk clone或下载到本地后)
+``` 
+pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_live', :path => '../'  
+```
+
+* 直接指定SDK的github仓库地址和版本号
+```
+pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_live', :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git', :tag => 'v2.7.0'
+```
+
+* 从cocoapod官方库Trunk获取spec, 从github下载sdk
+```
+pod ''KSYMediaPlayer_iOS/KSYMediaPlayer_live'
+```
+
+* 如果pod install 时出现无法找到specification的提示, 请先更新repo
+```
+pod repo update
+```
+
+*  **注意1**: 不能将以上语句都加入Podfile, 他们作用是一样的, 只是Podspec读取位置不同.
+
+</b>
+</details>
+
 ## 5. 快速集成
 [快速集成](https://github.com/ksvc/KSYMediaPlayer_iOS/wiki/rapidIntegration)中提供了集成金山云播放SDK的基本方法。
 具体可以参考demo工程中的相应文件。
