@@ -18,10 +18,6 @@
 
 @implementation PlayerTableViewCell
 
-- (void)awakeFromNib {
-    
-}
-
 - (void)configeWithVideoModel:(VideoModel *)videoModel {
     [self.coverImageView sd_setImageWithURL:[NSURL URLWithString:videoModel.CoverURL.firstObject] placeholderImage:[UIImage imageNamed:@""]];
     self.videoTitleLab.text = videoModel.VideoTitle;

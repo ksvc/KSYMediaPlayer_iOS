@@ -14,6 +14,8 @@
 #import "KSYNetTrackerVC.h"
 #import "KSYSQLite.h"
 #import "KSYDBCreater.h"
+#import "Masonry.h"
+#import "VersionSwitchHandler.h"
 
 @interface KSYLiveVC ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>{
     UITextField     *_textFiled;
@@ -41,6 +43,24 @@
     [self initVariable];
     [self initLiveVCUI];
     [KSYDBCreater initDatabase];
+    
+    [self addNewVerButton];
+}
+
+- (void)addNewVerButton {
+    UIButton *newVerBtn = [UIButton buttonWithType:UIButtonTypeSystem];
+    [newVerBtn setTitle:@"切换至新版" forState:UIControlStateNormal];
+    [newVerBtn addTarget:self action:@selector(newVerBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:newVerBtn];
+    [newVerBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(100, 50));
+        make.centerX.equalTo(self.view);
+        make.bottom.mas_equalTo(-20);
+    }];
+}
+
+- (void)newVerBtnClicked {
+    [VersionSwitchHandler switchToNewVersion];
 }
 
 - (UITextField *)addTextField{

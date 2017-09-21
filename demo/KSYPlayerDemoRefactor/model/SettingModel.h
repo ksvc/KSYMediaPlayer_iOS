@@ -13,9 +13,9 @@
 
 @property (nonatomic, assign) MPMovieVideoDecoderMode videoDecoderMode;
 
-@property (nonatomic, assign) NSTimeInterval bufferTimeMax;
+@property (nonatomic, assign) NSInteger bufferTimeMax;
 
-@property (nonatomic, assign) NSTimeInterval bufferSizeMax;
+@property (nonatomic, assign) NSInteger bufferSizeMax;
 
 @property (nonatomic, assign) NSInteger preparetimeOut;
 
@@ -24,5 +24,9 @@
 @property (nonatomic, assign) BOOL  shouldLoop;
 
 @property (nonatomic, assign) BOOL  recording;
+
+@property (nonatomic, assign) BOOL  showDebugLog;
+
++ (instancetype)defaultSetting;
 
 @end

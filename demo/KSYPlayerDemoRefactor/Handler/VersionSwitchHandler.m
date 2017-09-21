@@ -15,17 +15,19 @@
 @implementation VersionSwitchHandler
 
 + (void)switchToOldVersion {
-    [self setRootViewControllerForClass:[KSYLiveVC class]];
+    AppDelegate *delegeate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    delegeate.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    delegeate.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[KSYLiveVC alloc] init]];
+    [delegeate.window makeKeyAndVisible];
 }
 
 + (void)switchToNewVersion {
-    [self setRootViewControllerForClass:[ChoiceViewController class]];
-}
-
-+ (void)setRootViewControllerForClass:(Class)class {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BaseNavigationController *baseNav = storyboard.instantiateInitialViewController;
+    
     AppDelegate *delegeate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     delegeate.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    delegeate.window.rootViewController = [[BaseNavigationController alloc] initWithRootViewController:[[class alloc] init]];
+    delegeate.window.rootViewController = baseNav;
     [delegeate.window makeKeyAndVisible];
 }
 

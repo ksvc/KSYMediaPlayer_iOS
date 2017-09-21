@@ -7,7 +7,9 @@
 //
 
 #import "PlayerViewModel.h"
-#import "VideoContainerView.h"
+#import "VodPlayOperationView.h"
+#import "VodPlayController.h"
+#import "LivePlayController.h"
 #import "Masonry.h"
 
 @interface PlayerViewModel ()
@@ -27,26 +29,82 @@
     return self;
 }
 
-- (void)fullScreenHandlerForView:(VideoContainerView *)aView isFullScreen:(BOOL) isFullScreen {
-    [aView removeFromSuperview];
+- (void)fullScreenHandlerForPlayController:(UIViewController *)playController
+                              isFullScreen:(BOOL) isFullScreen {
+    [playController.view removeFromSuperview];
+    [playController removeFromParentViewController];
     UIInterfaceOrientation orientation = UIInterfaceOrientationUnknown;
     if (isFullScreen) {
         UIWindow *keywindow = [[UIApplication sharedApplication] keyWindow];
-        [keywindow addSubview:aView];
-        [aView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        [keywindow addSubview:playController.view];
+        [_owner addChildViewController:playController];
+        [playController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(keywindow);
         }];
         orientation = UIInterfaceOrientationLandscapeRight | UIInterfaceOrientationLandscapeLeft;
     } else {
-        [_owner.view addSubview:aView];
-        [aView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        [_owner.view addSubview:playController.view];
+        [_owner addChildViewController:playController];
+        [playController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.leading.trailing.top.equalTo(_owner.view);
             make.height.mas_equalTo(211);
         }];
         orientation = UIInterfaceOrientationPortrait;
     }
     [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
-    aView.fullScreen = (orientation != UIInterfaceOrientationPortrait);
+    if ([playController isKindOfClass:[VodPlayController class]]) {
+        VodPlayController *vpc = (VodPlayController *)playController;
+        vpc.fullScreen = (orientation != UIInterfaceOrientationPortrait);
+    } 
+}
+
+- (void)fullScreenButtonClickedHandlerForVodPlayController:(VodPlayController *)vodPlayController isFullScreen:(BOOL)isFullScreen
+{
+    [vodPlayController.view removeFromSuperview];
+    [vodPlayController removeFromParentViewController];
+    
+    UIInterfaceOrientation orientation = UIInterfaceOrientationLandscapeRight;
+    if (!isFullScreen) {
+        orientation = UIInterfaceOrientationPortrait;
+    }
+    
+    if (isFullScreen) {
+        UIWindow *keywindow = [[UIApplication sharedApplication] keyWindow];
+        [keywindow addSubview:vodPlayController.view];
+        [_owner addChildViewController:vodPlayController];
+        [vodPlayController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(keywindow);
+        }];
+    } else {
+        [_owner.view addSubview:vodPlayController.view];
+        [_owner addChildViewController:vodPlayController];
+        [vodPlayController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.leading.trailing.top.equalTo(_owner.view);
+            make.height.mas_equalTo(211);
+        }];
+    }
+    
+    [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
+    if ([vodPlayController isKindOfClass:[VodPlayController class]]) {
+        VodPlayController *vpc = (VodPlayController *)vodPlayController;
+        vpc.fullScreen = isFullScreen;
+    }
+}
+
+- (void)fullScreenHandlerForLivePlayController:(LivePlayController *)playController
+                                  isFullScreen:(BOOL) isFullScreen {
+    
+    UIInterfaceOrientation orientation = UIInterfaceOrientationUnknown;
+    if (isFullScreen) {
+        orientation = UIInterfaceOrientationLandscapeRight | UIInterfaceOrientationLandscapeLeft;
+    } else {
+        orientation = UIInterfaceOrientationPortrait;
+    }
+    [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
+    if ([playController isKindOfClass:[LivePlayController class]]) {
+        LivePlayController *vpc = (LivePlayController *)playController;
+        vpc.fullScreen = (orientation != UIInterfaceOrientationPortrait);
+    }
 }
 
 - (VideoModel *)nextVideoModel {

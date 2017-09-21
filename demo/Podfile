@@ -19,6 +19,11 @@ target 'KSYPlayerDemo' do
   
   #使用动态点播库
   #pod 'KSYMediaPlayer_iOS/KSYMediaPlayer_vod_dy',       :path => '../'
+  
+  pod 'SDWebImage'
+  pod 'JSONModel'
+  pod 'Masonry'
+  pod 'Toast'
 end
 
 post_install do |installer|

@@ -7,8 +7,7 @@
 //
 
 #import "BaseNavigationController.h"
-#import "VodViewController.h"
-#import "LiveViewController.h"
+#import "VideoListShowController.h"
 
 @interface BaseNavigationController ()<UINavigationControllerDelegate>
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
@@ -44,11 +43,9 @@
     
     BOOL isPanUnEnabled = NO;
     
-    isPanUnEnabled = ([self.topViewController isKindOfClass:[VodViewController class]] ||
-                      [self.topViewController isKindOfClass:[LiveViewController class]]
-                      );
+    isPanUnEnabled = ([self.topViewController isKindOfClass:[VideoListShowController class]]);
     
-    if ([self.topViewController isKindOfClass:[VodViewController class]] && ((VodViewController *)self.topViewController).hasSuspendView) {
+    if ([self.topViewController isKindOfClass:[VideoListShowController class]] && ((VideoListShowController *)self.topViewController).hasSuspendView) {
         isPanUnEnabled = NO;
     }
     

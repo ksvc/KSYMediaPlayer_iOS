@@ -31,7 +31,16 @@
 //        self.window.rootViewController = nav;
 //        [self.window makeKeyAndVisible];
 //    }
+    
+    
+    
+//    [NSThread sleepForTimeInterval:300];
+    
     return YES;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;//白色
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -65,6 +74,13 @@
         return UIInterfaceOrientationMaskLandscapeRight;
     }
     return UIInterfaceOrientationMaskPortrait;
+}
+
+- (SettingModel *)settingModel {
+    if (!_settingModel) {
+        _settingModel = [SettingModel defaultSetting];
+    }
+    return _settingModel;
 }
 
 @end
