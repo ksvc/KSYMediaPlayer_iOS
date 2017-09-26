@@ -62,5 +62,4 @@ fastlane/screenshots
 *.log
 *.xcworkspace/
 Podfile.lock
-export.plist
 .DS_Store
