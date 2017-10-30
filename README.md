@@ -1,5 +1,8 @@
 # 金山云KSYMediaPlayer iOS SDK使用手册
 
+[![Apps Using](https://img.shields.io/cocoapods/at/KSYMediaPlayer_iOS.svg?label=Apps%20Using%20KSYMediaPlayer_iOS&colorB=28B9FE)](http://cocoapods.org/pods/KSYMediaPlayer_iOS)[![Downloads](https://img.shields.io/cocoapods/dt/KSYMediaPlayer_iOS.svg?label=Total%20Downloads%20KSYMediaPlayer_iOS&colorB=28B9FE)](http://cocoapods.org/pods/KSYMediaPlayer_iOS)
+
+
 [![CocoaPods version](https://img.shields.io/cocoapods/v/KSYMediaPlayer_iOS.svg)](https://cocoapods.org/pods/KSYMediaPlayer_iOS)
 [![CocoaPods platform](https://img.shields.io/cocoapods/p/KSYMediaPlayer_iOS.svg)](https://cocoapods.org/pods/KSYMediaPlayer_iOS)
 [![CocoaPods doc](https://img.shields.io/cocoapods/metrics/doc-percent/KSYMediaPlayer_iOS.svg)](http://cocoadocs.org/docsets/KSYMediaPlayer_iOS/)
