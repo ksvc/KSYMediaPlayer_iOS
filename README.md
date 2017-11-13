@@ -219,7 +219,11 @@ pod repo update
 
 - 主页：[金山云](http://www.ksyun.com/)
 - 邮箱：<zengfanping@kingsoft.com>
-- QQ讨论群：574179720
+* QQ讨论群：
+    * 574179720 [视频云技术交流群]
+    * 621137661 [视频云iOS技术交流]
+    * 以上两个加一个QQ群即可
+    
 - Issues:https://github.com/ksvc/KSYMediaPlayer_iOS/issues
 
 <a href="http://www.ksyun.com/"><img src="https://raw.githubusercontent.com/wiki/ksvc/KSYLive_Android/images/logo.png" border="0" alt="金山云计算" /></a>
