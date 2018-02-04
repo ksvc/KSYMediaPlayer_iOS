@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SettingModel.h"
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
@@ -16,7 +15,6 @@
 
 @property (nonatomic, assign) BOOL allowRotation;
 
-@property (nonatomic, strong) SettingModel *settingModel;
 
 @end
 

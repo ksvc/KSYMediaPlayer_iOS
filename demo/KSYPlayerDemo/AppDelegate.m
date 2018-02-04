@@ -23,14 +23,14 @@
     cfg.channel = @"public";
     [Bugly startWithAppId:@"551ed64275" config:cfg];
     NSLog(@"Bugly Version:%@",[Bugly sdkVersion]);
-//    
-//    if(!DEV_MODE){
-//        self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-//        KSYLiveVC *liveVc = [[KSYLiveVC alloc]init];
-//        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:liveVc];
-//        self.window.rootViewController = nav;
-//        [self.window makeKeyAndVisible];
-//    }
+    
+    if(!DEV_MODE){
+        self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        KSYLiveVC *liveVc = [[KSYLiveVC alloc]init];
+        UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:liveVc];
+        self.window.rootViewController = nav;
+        [self.window makeKeyAndVisible];
+    }
     
     
     
@@ -70,17 +70,7 @@
     if (self.allowRotation) {
         return UIInterfaceOrientationMaskAll;
     }
-    if (self.settingModel.recording) {
-        return UIInterfaceOrientationMaskLandscapeRight;
-    }
     return UIInterfaceOrientationMaskPortrait;
-}
-
-- (SettingModel *)settingModel {
-    if (!_settingModel) {
-        _settingModel = [SettingModel defaultSetting];
-    }
-    return _settingModel;
 }
 
 @end
