@@ -8,7 +8,6 @@
 
 #import "CustomLaunchController.h"
 
-
 @interface CustomLaunchController ()
 @property (weak, nonatomic) IBOutlet UILabel *versionLab;
 

@@ -8,7 +8,6 @@
 
 #import "ChoiceViewController.h"
 #import "VideoListShowController.h"
-#import "VersionSwitchHandler.h"
 #import "Constant.h"
 
 #import "CustomLaunchController.h"
@@ -55,10 +54,6 @@
         }
     });
 }
-
-//- (IBAction)switchToOldVersion:(id)sender {
-//    [VersionSwitchHandler switchToOldVersion];
-//}
 
 #pragma mark - Navigation
 

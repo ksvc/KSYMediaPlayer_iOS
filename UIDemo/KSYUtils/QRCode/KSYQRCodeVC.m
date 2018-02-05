@@ -10,7 +10,6 @@
 #import "BaseTapSound.h"
 #import <AVFoundation/AVFoundation.h>
 
-
 @interface KSYQRCodeVC ()<AVCaptureMetadataOutputObjectsDelegate,UIActionSheetDelegate>{
     SystemSoundID soundID; //声音
     float move; //

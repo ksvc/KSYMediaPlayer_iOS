@@ -62,16 +62,16 @@
     [self fetchDatasource];
     
     
-    UIBarButtonItem* leftItem = [UIBarButtonItem barButtonItemWithImageName:@"scan" frame:KSYScreen_Frame(0, 0, 40, 40) target:self action:@selector(scanQRCodeAction:)];
+    UIBarButtonItem* leftItem = [UIBarButtonItem barButtonItemWithImageName:@"扫一扫" frame:KSYScreen_Frame(0, 0, 40, 40) target:self action:@selector(scanQRCodeAction:)];
     self.navigationItem.leftBarButtonItem = leftItem;
     
-    UIBarButtonItem* rightItem = [UIBarButtonItem barButtonItemWithImageName:@"setting" frame:KSYScreen_Frame(0, 0, 40, 40) target:self action:@selector(jumpSetting)];
+    UIBarButtonItem* rightItem = [UIBarButtonItem barButtonItemWithImageName:@"设置" frame:KSYScreen_Frame(0, 0, 40, 40) target:self action:@selector(jumpSetting)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
     //添加一个通知，当打开 直播的时候 需要刷新
-//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(closeButtonAction) name:closeSuspensionBox object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(closeButtonAction) name:closeSuspensionBox object:nil];
 }
-- (void)jumpSetting {
+-(void)jumpSetting{
 
    SettingViewController *settingVC = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
     settingVC.hidesBottomBarWhenPushed = YES;

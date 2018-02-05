@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <KSYMediaPlayer/KSYReachability.h>
+#import <KSYMediaPlayer/KSYMoviePlayerController.h>
+
 /**
  ksy自定义视图控制器
  
