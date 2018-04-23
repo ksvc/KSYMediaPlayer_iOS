@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Constants/KSYMPErrorCode.html">
+	<File path="Constants/MEDIAINFO_SAMPLE_FMT.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/c/tdef/KSYMPErrorCode</TokenIdentifier>
-			<Abstract type="html">错误码</Abstract>
-			<DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/MEDIAINFO_SAMPLE_FMT</TokenIdentifier>
+			<Abstract type="html">音频采样格式</Abstract>
+			<DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
 			
 			<NodeRef refid="11"/>
@@ -14,211 +14,121 @@
 		
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPOK</TokenIdentifier>
-            <Abstract type="html">正常</Abstract>
-            <Declaration>KSYMPOK</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_UNKNOWN</TokenIdentifier>
+            <Abstract type="html">未知的音频采样格式</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_UNKNOWN</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeUnknownError</TokenIdentifier>
-            <Abstract type="html">未知错误</Abstract>
-            <Declaration>KSYMPErrorCodeUnknownError</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeFileIOError</TokenIdentifier>
-            <Abstract type="html">读写数据异常</Abstract>
-            <Declaration>KSYMPErrorCodeFileIOError</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_U8</TokenIdentifier>
+            <Abstract type="html">音频采样格式为unsigned 8 bits</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_U8</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeUnsupportProtocol</TokenIdentifier>
-            <Abstract type="html">不支持的流媒体协议</Abstract>
-            <Declaration>KSYMPErrorCodeUnsupportProtocol</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeDNSParseFailed</TokenIdentifier>
-            <Abstract type="html">DNS解析失败</Abstract>
-            <Declaration>KSYMPErrorCodeDNSParseFailed</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_S16</TokenIdentifier>
+            <Abstract type="html">音频采样格式为signed 16 bits</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_S16</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeCreateSocketFailed</TokenIdentifier>
-            <Abstract type="html">创建socket失败</Abstract>
-            <Declaration>KSYMPErrorCodeCreateSocketFailed</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeConnectServerFailed</TokenIdentifier>
-            <Abstract type="html">连接服务器失败</Abstract>
-            <Declaration>KSYMPErrorCodeConnectServerFailed</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_S32</TokenIdentifier>
+            <Abstract type="html">音频采样格式为signed 32 bits</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_S32</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeBadRequest</TokenIdentifier>
-            <Abstract type="html">http请求返回400</Abstract>
-            <Declaration>KSYMPErrorCodeBadRequest</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeUnauthorizedClient</TokenIdentifier>
-            <Abstract type="html">http请求返回401</Abstract>
-            <Declaration>KSYMPErrorCodeUnauthorizedClient</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_FLT</TokenIdentifier>
+            <Abstract type="html">音频采样格式为float</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_FLT</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeAccessForbidden</TokenIdentifier>
-            <Abstract type="html">http请求返回403</Abstract>
-            <Declaration>KSYMPErrorCodeAccessForbidden</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeTargetNotFound</TokenIdentifier>
-            <Abstract type="html">http请求返回404</Abstract>
-            <Declaration>KSYMPErrorCodeTargetNotFound</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_DBL</TokenIdentifier>
+            <Abstract type="html">音频采样格式为double</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_DBL</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeOtherErrorCode</TokenIdentifier>
-            <Abstract type="html">http请求返回4xx</Abstract>
-            <Declaration>KSYMPErrorCodeOtherErrorCode</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeServerException</TokenIdentifier>
-            <Abstract type="html">http请求返回5xx</Abstract>
-            <Declaration>KSYMPErrorCodeServerException</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_U8P</TokenIdentifier>
+            <Abstract type="html">音频采样格式为unsigned 8 bits, planar</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_U8P</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeInvalidData</TokenIdentifier>
-            <Abstract type="html">无效的媒体数据</Abstract>
-            <Declaration>KSYMPErrorCodeInvalidData</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeUnsupportVideoCodec</TokenIdentifier>
-            <Abstract type="html">不支持的视频编码类型</Abstract>
-            <Declaration>KSYMPErrorCodeUnsupportVideoCodec</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_S16P</TokenIdentifier>
+            <Abstract type="html">音频采样格式为signed 16 bits, planar</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_S16P</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeUnsupportAudioCodec</TokenIdentifier>
-            <Abstract type="html">不支持的音频编码类型</Abstract>
-            <Declaration>KSYMPErrorCodeUnsupportAudioCodec</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeVideoDecodeFailed</TokenIdentifier>
-            <Abstract type="html">视频解码失败</Abstract>
-            <Declaration>KSYMPErrorCodeVideoDecodeFailed</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_S32P</TokenIdentifier>
+            <Abstract type="html">音频采样格式为signed 32 bits, planar</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_S32P</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCodeAudioDecodeFailed</TokenIdentifier>
-            <Abstract type="html">音频解码失败</Abstract>
-            <Declaration>KSYMPErrorCodeAudioDecodeFailed</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorCode3xxOverFlow</TokenIdentifier>
-            <Abstract type="html">次数过多的3xx跳转(8次)</Abstract>
-            <Declaration>KSYMPErrorCode3xxOverFlow</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_FLTP</TokenIdentifier>
+            <Abstract type="html">音频采样格式为float, planar</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_FLTP</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
-            
-            <NodeRef refid="11"/>
-        </Token>
-        
-        <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorInvalidURL</TokenIdentifier>
-            <Abstract type="html">无效的url</Abstract>
-            <Declaration>KSYMPErrorInvalidURL</Declaration>
-            
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
         
         <Token>
-            <TokenIdentifier>//apple_ref/c/econst/KSYMPErrorNetworkUnReachable</TokenIdentifier>
-            <Abstract type="html">网络不通</Abstract>
-            <Declaration>KSYMPErrorNetworkUnReachable</Declaration>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_DBLP</TokenIdentifier>
+            <Abstract type="html">音频采样格式为double, planar</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_DBLP</Declaration>
             
-            <DeclaredIn>KSYMoviePlayerDefines.h</DeclaredIn>
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
+            
+            <NodeRef refid="11"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/MEDIAINFO_SAMPLE_FMT_NB</TokenIdentifier>
+            <Abstract type="html">音频采样格式为Number of sample formats</Abstract>
+            <Declaration>MEDIAINFO_SAMPLE_FMT_NB</Declaration>
+            
+            <DeclaredIn>KSYMediaInfo.h</DeclaredIn>
             
             <NodeRef refid="11"/>
         </Token>
