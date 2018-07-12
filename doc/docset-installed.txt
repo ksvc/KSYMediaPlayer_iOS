@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/ksyci/Library/Developer/Shared/Documentation/DocSets/com.ksyun.KSYMediaPlayer_iOS.docset
-Time: 2018-04-23 06:44:00 +0000
+Path: /Users/ksvc/Library/Developer/Shared/Documentation/DocSets/com.ksyun.KSYMediaPlayer_iOS.docset
+Time: 2018-07-12 03:12:49 +0000
