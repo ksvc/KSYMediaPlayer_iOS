@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, '7.0'
   spec.requires_arc = true
   spec.frameworks   = 'VideoToolbox'
-  spec.ios.library = 'z', 'iconv', 'stdc++.6', 'bz2'
+  spec.ios.library = 'z', 'iconv', 'c++', 'bz2'
   spec.source = {
 	  :git => 'https://github.com/ksvc/KSYMediaPlayer_iOS.git', 
 	  :tag => 'v'+spec.version.to_s

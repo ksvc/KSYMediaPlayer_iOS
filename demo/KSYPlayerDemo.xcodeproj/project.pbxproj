@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		314D1B501EF8FAC80033C993 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 314D1B4F1EF8FAC80033C993 /* Bugly.framework */; };
+		3905824E2150EEA10027184A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3905824D2150EEA10027184A /* libc++.tbd */; };
 		581D3A7F1DE68CDA00051F63 /* KSYMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */; };
 		582096031EDED32600C38D0F /* KSYAVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 582096021EDED32600C38D0F /* KSYAVWriter.m */; };
 		582CC6021F30729300DFED24 /* KSYPlayerAudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 582CC5FB1F306F3400DFED24 /* KSYPlayerAudioView.m */; };
@@ -34,7 +35,6 @@
 		74B9ED681C158675003149E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74B9ED671C158675003149E9 /* Assets.xcassets */; };
 		74B9EE291C159629003149E9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE281C159629003149E9 /* libz.tbd */; };
 		74B9EE2B1C159630003149E9 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE2A1C159630003149E9 /* libbz2.tbd */; };
-		74B9EE2F1C159643003149E9 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE2E1C159643003149E9 /* libstdc++.6.tbd */; };
 		74B9EE311C159649003149E9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9EE301C159649003149E9 /* VideoToolbox.framework */; };
 		7C89723D1C461FBC00535BC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C89723C1C461FBC00535BC8 /* SystemConfiguration.framework */; };
 		7C9220BA1C984FC9005EF1D1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C9220B91C984FC9005EF1D1 /* libsqlite3.tbd */; };
@@ -61,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		314D1B4F1EF8FAC80033C993 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
+		3905824D2150EEA10027184A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KSYMediaPlayer.framework; path = ../framework/live/KSYMediaPlayer.framework; sourceTree = "<group>"; };
 		582096011EDED32600C38D0F /* KSYAVWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYAVWriter.h; sourceTree = "<group>"; };
 		582096021EDED32600C38D0F /* KSYAVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYAVWriter.m; sourceTree = "<group>"; };
@@ -108,8 +109,6 @@
 		74B9ED6C1C158675003149E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B9EE281C159629003149E9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		74B9EE2A1C159630003149E9 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
-		74B9EE2C1C159638003149E9 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		74B9EE2E1C159643003149E9 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		74B9EE301C159649003149E9 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		7C89723C1C461FBC00535BC8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7C9220B91C984FC9005EF1D1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -132,12 +131,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3905824E2150EEA10027184A /* libc++.tbd in Frameworks */,
 				314D1B501EF8FAC80033C993 /* Bugly.framework in Frameworks */,
 				581D3A7F1DE68CDA00051F63 /* KSYMediaPlayer.framework in Frameworks */,
 				7C9220BA1C984FC9005EF1D1 /* libsqlite3.tbd in Frameworks */,
 				7C89723D1C461FBC00535BC8 /* SystemConfiguration.framework in Frameworks */,
 				74B9EE311C159649003149E9 /* VideoToolbox.framework in Frameworks */,
-				74B9EE2F1C159643003149E9 /* libstdc++.6.tbd in Frameworks */,
 				74B9EE2B1C159630003149E9 /* libbz2.tbd in Frameworks */,
 				74B9EE291C159629003149E9 /* libz.tbd in Frameworks */,
 			);
@@ -149,6 +148,7 @@
 		581D3A7D1DE68CDA00051F63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3905824D2150EEA10027184A /* libc++.tbd */,
 				314D1B4F1EF8FAC80033C993 /* Bugly.framework */,
 				581D3A7E1DE68CDA00051F63 /* KSYMediaPlayer.framework */,
 			);
@@ -264,8 +264,6 @@
 				7C9220B91C984FC9005EF1D1 /* libsqlite3.tbd */,
 				7C89723C1C461FBC00535BC8 /* SystemConfiguration.framework */,
 				74B9EE301C159649003149E9 /* VideoToolbox.framework */,
-				74B9EE2E1C159643003149E9 /* libstdc++.6.tbd */,
-				74B9EE2C1C159638003149E9 /* libstdc++.tbd */,
 				74B9EE2A1C159630003149E9 /* libbz2.tbd */,
 				74B9EE281C159629003149E9 /* libz.tbd */,
 				74B9ED5C1C158675003149E9 /* main.m */,
